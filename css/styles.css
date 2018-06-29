@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+
+body {
+	font-family: 'Roboto', Helvetica, sans-serif;
+	line-height: 150%
+}
+
+h1 {
+	font-size: 20px;
+	color: black;
+}
+
+h2{
+	font-size: 20px;
+	color: black;
+}
+
+h3 {
+	font-size: 18px;
+	color: #ef2323;
+}
+
+p {
+	font-weight: 300;
+}	
+
+li{
+	list-style: none;
+}
+
+.integrantes {
+	padding: 20px;
+	margin: auto;
+}
+
+.total_integrantes {
+	display: inline-block;
+	width: 24%;
+	padding: 20px;
+	text-align: center;
+}
+
+.total_integrantes img {
+	width: 60%;
+	height: 150px;
+	border-radius: 100%;
+}
+
+
+footer ul li img{
+	width: 50px;
+	height: 50px
+}
+
+
+
