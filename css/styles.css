@@ -32,9 +32,84 @@ li{
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
+header {
+	position: -webkit-sticky;
+  	position: sticky;
+	background: #fff;
+	border-bottom: 1px solid #000;	
+	padding: 20px;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	overflow: auto;
+}
+
+header h1 {
+	display: inline-block;
+}
+
+header nav {
+	float: right;
+	position: relative;
+
+}
+
+header nav ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+section {
+	border-top: 1px solid #000;
+	padding: 20px;
+}
+
+.portada {
+	background: url(../img/background.jpg) no-repeat fixed;
+	background-size: cover;
+	background-position: 0px 50px;
+	width: 	100%;
+	padding: 20px;
+	height: 70vh;
+}
+
+.portada span {
+	display: inline-block;
+	position: relative;	
+	top: 75%;
+	left: 20%;
+	padding: 40px;
+	background-color: #aaa4a494;
+	font-size: 80px;
+	color: #fff;	
+}
+
+.portada a img {
+	position: relative;
+	top: -10px;
+	float: right;
+	width: 50px;
+	height: 50px
+}
+
 .integrantes {
 	padding: 20px;
 	margin: auto;
+}
+
+section h2{
+	text-align: center;
+	padding: 20px;
 }
 
 .total_integrantes {
@@ -45,16 +120,104 @@ li{
 }
 
 .total_integrantes img {
-	width: 60%;
-	height: 150px;
+	width: 55%;
+	height: 25vh;
 	border-radius: 100%;
 }
 
 
-footer ul li img{
+.albums {
+	float: left;
+	padding: 20px;
+}
+
+.albums img {
+	width: 150px;
+	height: 25vh;
+}
+
+.contacto {
+	clear: both;
+}
+
+
+
+
+footer {
+	background: #00000094;
+	color: white;
+	top: 0;
+	padding: 20px;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+
+footer h2 {
+	color: #a50404;
+}
+
+
+.footer	{
+	float: left;
+	position: relative;
+	width: 33.3%;
+	padding: 20px 0px;
+}
+
+.noticias {
+	float: left;
+	position: relative;
+	width: 33.3%;
+	padding: 20px 0px;
+	text-align: center;
+}
+
+.soporte	{
+	float: left;
+	position: relative;
+	width: 33.3%;
+	padding: 20px 0px;
+	text-align: right;
+}
+
+.redes_sociales	{
+	clear: both;
+	position: relative;
+	width: 100%;
+	padding: 20px 0px;
+	text-align: center;
+}
+
+.social li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 10px 10px 0px;
+}
+
+.social li a img{
 	width: 50px;
 	height: 50px
 }
+
+
+
+.buttom {
+	position: fixed;
+	right: 50px;
+	bottom: 10px;
+	padding: 10px;
+	border-radius: 2px;
+ 	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  	background-color: #c51414;
+  	color: #ecf0f1;
+	z-index: 10;
+	overflow: auto;
+}	
+
+
+
+
 
 
 
