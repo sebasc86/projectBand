@@ -67,6 +67,32 @@ section {
 	padding: 20px;
 }
 
+section h2{
+	background-color: #101419;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 20px 0px;
+}
+
+section h2::after {
+	border-top: 40px solid #101419;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	width: 0;
+	height: 0;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0.5rem;
+
+}
+
 .portada {
 	display: flex;
 	flex-direction: column-reverse;
@@ -112,13 +138,8 @@ section {
 	background: #dddada99;
 }
 
-section h2{
-	text-align: center;
-	padding: 70px 0 80px 0px;
-	width: 100%;
-	font-size: 40px;
-	font-weight: 400;
-}
+
+
 
 .total_integrantes {
 	width: 24%;
@@ -126,7 +147,7 @@ section h2{
 	display: flex;
 	justify-content: center;
 	position: relative;
-	box-shadow: 3px -3px 13px 0px rgba(0,0,0,0.51);
+	margin: 40px 0px;
 	}
 
 .total_integrantes img {
@@ -134,6 +155,7 @@ section h2{
 	height: 250px;
 	border-radius: 100%;
 	border: 15px solid #a8a8a8cc;
+	box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.51);
 }
 
 .total_integrantes div {
@@ -174,6 +196,7 @@ section h2{
 .albums {
 	float: left;
 	padding: 20px;
+	margin: 20px 0px;
 }
 
 .albums img {
@@ -184,11 +207,15 @@ section h2{
 
 .historia {
 	clear: both;
+	position: relative;
 }
 
 .historia p{
 	font-weight: 300;
 	line-height: 150%;
+	padding: 10px;
+	position: relative;
+	top: 25px;
 }
 
 .contacto {
