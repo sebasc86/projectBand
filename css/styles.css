@@ -140,13 +140,10 @@ section h2::after {
 
 
 
-
 .total_integrantes {
-	width: 24%;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
-	position: relative;
 	margin: 40px 0px;
 	}
 
@@ -193,16 +190,31 @@ section h2::after {
   transition: 1s;
 }
 
-.albums {
-	float: left;
+
+.discografia ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	padding: 20px;
 	margin: 20px 0px;
 }
 
-.albums img {
-	width: 150px;
-	height: 25vh;
+.discografia img {
+	width: 200px;
+	height: 200px;
+	margin: 5px;
 }
+
+// .albums {
+// 	float: left;
+// 	padding: 20px;
+// 	margin: 20px 0px;
+// }
+
+// .albums img {
+// 	width: 150px;
+// 	height: 25vh;
+// }
 
 
 .historia {
