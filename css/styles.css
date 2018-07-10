@@ -68,7 +68,6 @@ header nav ul li a:hover {
 
 
 section {
-	border-top: 1px solid #000;
 	padding: 20px;
 }
 
@@ -224,19 +223,37 @@ section {
 
 .discografia {
 	padding: 20px;
+	background: #d1d1d1;
 }
 
 
 .discografia ul{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	padding: 20px;
-	margin: 70px 0px 20px 0px;
+	margin: 40px 0px
 	-webkit-box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
 	-moz-box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
-	box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
+	box-shadow: 10px 1px 15px 0px rgba(41, 25, 25, 0.7);
+	background: #fff;
 }
+
+.titulo_discografia {
+	width: 100%;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+}
+
+.titulo_discografia h2{
+	font-weight: bold;
+	font-size: 1.75rem;
+	color: white;
+	background: #cc0303;
+	padding: 20px 0px;
+}
+
 
 .discografia img {
 	width: 200px;
