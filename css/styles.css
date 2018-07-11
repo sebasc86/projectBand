@@ -188,7 +188,7 @@ section {
 }
 
 .total_integrantes:hover > .img-integrantes {
-	opacity: 0.3;
+	opacity: 0.1;
   	transition: 1s;
 }
 
@@ -235,7 +235,6 @@ section {
 .titulo_discografia {
 	width: 100%;
 	padding: 10px;
-	/*! margin: auto; */
 	text-align: center;
 }
 
@@ -243,7 +242,7 @@ section {
 	font-weight: bold;
 	font-size: 1.5rem;
 	color: white;
-	background: #cc0303;
+	background: #ea0000;
 	padding: 20px 0px;
 }
 
@@ -266,9 +265,33 @@ section {
 .albums p{
 	color: black;
 	position: absolute;
+	padding: 5px;
 	top: 80%;
 	align-self: center;
 	font-size: 1.2rem;
+	display: none;
+}
+
+.albums .album-titulo {
+	color: #ea0000;
+	position: absolute;
+	top: 65%;
+	align-self: center;
+	font-size: 1.3rem;
+	display: none;
+}
+
+.albums .album-titulo-2 {
+	color: #c51414;
+	position: absolute;
+	top: 73%;
+	align-self: center;
+	font-size: 1.3rem;
+	display: none;
+}
+
+.albums .album-titulo-small {
+	font-size: 0.9rem;
 	display: none;
 }
 
