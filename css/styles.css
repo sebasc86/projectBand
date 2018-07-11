@@ -144,7 +144,6 @@ section {
 }
 
 
-
 .integrantes ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -153,22 +152,18 @@ section {
 	padding: 20px 0px;
 }
 
-.integrantes ul li {
+.total_integrantes {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	margin: 30px 0px;
-}
-
-
-.total_integrantes {
 	width: 250px;
 	height: 250px;
 	border: 15px solid #cfb600;
 	border-radius: 100%;
 	-webkit-box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
 	-moz-box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
-	box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);;
+	box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
 }
 
 .total_integrantes:hover {
@@ -176,14 +171,14 @@ section {
 }
 
 
-.total_integrantes .img-integrantes {
+.img-integrantes {
 	width: 100%;
 	height: 100%;
 	border-radius: 100%;
 	align-self: center;
 }
 
-.total_integrantes .icon-rs {
+.icon-rs {
 	position: relative;
 	top: -200px;
 	width: 50px;
@@ -226,42 +221,96 @@ section {
 	background: #d1d1d1;
 }
 
-
 .discografia ul{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	padding: 20px;
-	margin: 40px 0px
+	justify-content: space-evenly;
+	margin: 40px 0px;
+	background: #fff;
 	-webkit-box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
 	-moz-box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
-	box-shadow: 10px 1px 15px 0px rgba(41, 25, 25, 0.7);
-	background: #fff;
+	box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
 }
 
 .titulo_discografia {
 	width: 100%;
 	padding: 10px;
-	margin: auto;
+	/*! margin: auto; */
 	text-align: center;
 }
 
 .titulo_discografia h2{
 	font-weight: bold;
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	color: white;
 	background: #cc0303;
 	padding: 20px 0px;
 }
 
+.albums {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0px;
+}
 
-.discografia img {
-	width: 200px;
-	height: 200px;
-	margin: 5px;
+.albums h2{
+	color: #c51414;
+	position: absolute;
+	top: 70%;
+	align-self: center;
+	font-size: 1.3rem;
+	display: none;
+}
+
+.albums p{
+	color: black;
+	position: absolute;
+	top: 80%;
+	align-self: center;
+	font-size: 1.2rem;
+	display: none;
+}
+
+.albums:hover > h2,
+.albums:hover > p,
+.albums:hover > .icon-disco {
+	display: block;
+}
+
+.albums img {
+	width: 250px;
+	height: 250px;
+}
+
+.albums .icon-disco {
+	position: absolute;
+	top: 40%;
+	width: 100px;
+	height: 50px;
+	align-self: center;
+	display: none;
 }
 
 
+.albums .icon-disco-doble {
+	top: 20%;
+}
+
+.albums .icon-disco-rs {
+	width: 60px;
+	height: 60px;
+}
+
+.albums .icon-disco-vr {
+	width: 120px;
+	height: 70px;
+}
+
+.albums:hover > .albums-img {
+	opacity: 0.3;
+  	transition: 1s;
+}
 
 .historia {
 	clear: both;
