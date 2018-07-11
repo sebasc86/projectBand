@@ -115,7 +115,7 @@ section {
 	width: 100%;
 	position: relative;
 	padding: 20px;
-	margin: 40px 0px;
+	color: white;
 }
 
 // .barra_titulo::after {
@@ -131,11 +131,6 @@ section {
 // 	left: 10px;
 // }
 
-.titulo {
-	color: white;
-}
-
-
 .integrantes {
 	padding: 20px;
 	display: flex;
@@ -148,8 +143,11 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	margin-top: 40px;
 	justify-content: space-around;
-	padding: 20px 0px;
+	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 }
 
 .total_integrantes {
@@ -225,11 +223,20 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin: 40px 0px;
+	margin: 20px 0px;
 	background: #fff;
-	-webkit-box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
-	-moz-box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
-	box-shadow: 10px 1px 15px 0px rgba(0,0,0,0.65);
+	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+}
+
+.barra_discografia {
+	background-color: #101419;
+	width: 100%;
+	position: relative;
+	padding: 20px;
+	color: #fff;
+	margin-top: 40px;
 }
 
 .titulo_discografia {
@@ -295,15 +302,26 @@ section {
 	display: none;
 }
 
-.albums:hover > h2,
-.albums:hover > p,
-.albums:hover > .icon-disco {
+.albums a:hover > h2,
+.albums a:hover > p,
+.albums a:hover > .icon-disco,
+.albums a:hover > .icon-ytb {
 	display: block;
 }
 
 .albums img {
 	width: 250px;
 	height: 250px;
+}
+
+.albums .icon-ytb {
+	position: absolute;
+	top: 5%;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	align-self: center;
+	display: none;
 }
 
 .albums .icon-disco {
@@ -314,7 +332,6 @@ section {
 	align-self: center;
 	display: none;
 }
-
 
 .albums .icon-disco-doble {
 	top: 20%;
@@ -330,9 +347,9 @@ section {
 	height: 70px;
 }
 
-.albums:hover > .albums-img {
+a:hover > .albums-img {
 	opacity: 0.3;
-  	transition: 1s;
+  	transition: 0.5s;
 }
 
 .historia {
