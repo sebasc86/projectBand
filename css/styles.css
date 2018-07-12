@@ -357,6 +357,14 @@ a:hover > .albums-img {
 	position: relative;
 }
 
+.historia h2 {
+	font-weight: 500;
+	line-height: 150%;
+	padding: 10px;
+	position: relative;
+	top: 25px;
+}
+
 .historia p{
 	font-weight: 300;
 	line-height: 150%;
@@ -374,56 +382,81 @@ a:hover > .albums-img {
 
 
 footer {
+	display: flex;
 	background: #00000094;
 	color: white;
 	top: 0;
-	padding: 20px;
+	padding: 10px;
 	width: 100%;
 	height: auto;
 	overflow: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-footer h2 {
-	color: #a50404;
+.opciones {
+	padding: 20px;
 }
 
-
-.footer	{
-	float: left;
-	position: relative;
-	width: 33.3%;
-	padding: 20px 0px;
+.opciones h2 {
+	padding: 10px 0px;
 }
 
-.noticias {
-	float: left;
-	position: relative;
-	width: 33.3%;
-	padding: 20px 0px;
+.opciones li {
+	padding: 3px 0px;
+}
+
+.noticias_footer {
 	text-align: center;
+	padding: 20px;
 }
 
-.soporte	{
-	float: left;
-	position: relative;
-	width: 33.3%;
-	padding: 20px 0px;
+.noticias_footer h2{
+	text-align: center;
+	padding: 10px;
+}
+
+.noticias_footer li {
+	padding: 3px 0px;
+}
+
+.contacto_footer {
 	text-align: right;
+	padding: 20px;
 }
 
-.redes_sociales	{
-	clear: both;
-	position: static;
+.contacto_footer li h2{
+	text-align: right;
+	padding: 10px 0px;
+}
+
+.contacto_footer li{
+	padding: 3px 0px;
+}
+
+
+.social {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 10px;
 	width: 100%;
-	padding: 20px 0px;
+	justify-content: center;
+	left: -40px;
+}
+
+
+.social li{
+	padding: 20px;
+}
+
+.social .social_titulo_redes{
+	width: 100%;
+	padding: 10px 0px 0px 0px;
 	text-align: center;
 }
 
-.social li {
-	list-style: none;
-	display: inline-block;
-	padding: 10px 10px 10px 0px;
-}
 
 .social li a img{
 	width: 50px;
