@@ -352,32 +352,129 @@ a:hover > .albums-img {
   	transition: 0.5s;
 }
 
-.historia {
-	clear: both;
-	position: relative;
-}
+
 
 .historia h2 {
 	font-weight: 500;
 	line-height: 150%;
-	padding: 10px;
 	position: relative;
+	padding: 20px;
 	top: 25px;
 }
 
 .historia p{
 	font-weight: 300;
 	line-height: 150%;
-	padding: 10px;
+	padding: 20px;
 	position: relative;
 	top: 25px;
 }
 
-.contacto {
-	clear: both;
-	overflow: hidden;
+.noticias {
+	background: #00000094;
 }
 
+.noticias ul {
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+}
+
+.noticias ul li{
+	display: flex;
+	width: 33%;
+	padding: 20px;
+	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	flex-direction: column;
+}
+
+.noticias ul li h3 {
+	padding: 20px 0px;
+}
+
+.noticias ul li span {
+	padding: 15px 0px;
+	align-self: end;
+	font-size: 0.8rem;
+}
+
+.contacto {
+	height: auto;
+	background: #ddd;
+}
+
+.contacto div {
+	position: relative;
+	width: 60%;
+	margin: auto;
+}
+
+.contacto form {
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background: #fff;
+	margin: 20px;
+	border: 1px solid black;
+}
+
+.contacto .submit {
+	font-size: 1.2rem;
+	padding: 10px 5em;
+	background: #f99104;
+	text-transform: capitalize;
+	color: #fff;
+	cursor: pointer;
+	width: 56%;
+	border-bottom: 2px solid #A26E28;
+}
+
+.contacto input {
+	padding: 10px;
+	width: 80%;
+	margin: auto;
+	border: 1px solid #CECCCC;
+	color: #555;
+}
+
+.contacto .usuario {
+	background: url(../img/png/004-user.png) no-repeat 96% 55%;
+}
+
+.contacto .telefono {
+	background: url(../img/png/003-smartphone.png) no-repeat 96% 55%;
+}
+
+.contacto .email {
+	background: url(../img/png/002-email.png) no-repeat 96%;
+}
+
+.contacto .mensaje {
+	background: url(../img/png/001-information-button.png) no-repeat 96% 5%;
+}
+
+.contacto textarea {
+width: 80%;
+height: 120px;
+outline: none;
+resize: none;
+margin-bottom: 1em;
+border: 1px solid #CECCCC;
+padding: .8em 4em .8em 1em;
+font-size: 1em;
+color: #555;
+}
+
+.contacto form h4 {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 400;
+	padding: 20px;
+}
 
 
 
