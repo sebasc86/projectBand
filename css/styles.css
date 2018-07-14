@@ -25,9 +25,9 @@
     	transform: none; 
     	position: absolute;
 		top: 50%;
-		left: 50%;
-		width: 50px;
-		height: 50px;
+		left: 45%;
+		width: 100px;
+		height: 100px;
 
     }
     50% { 
@@ -35,17 +35,17 @@
     	transform: scale(2);
 		position: absolute;
 		top: 50%;
-		left: 50%;
-		width: 50px;
-		height: 50px;
+		left: 45%;
+		width: 100px;
+		height: 100px;
      }
     to { 
     	transform: none;
     	position: absolute;
 		top: 50%;
-		left: 50%;
-		width: 50px;
-		height: 50px; 
+		left: 45%;
+		width: 100px;
+		height: 100px; 
 	}
 }
 
