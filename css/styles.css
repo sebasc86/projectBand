@@ -117,8 +117,7 @@ section {
 	padding: 20px;
 }
 
-
-//Portada
+/* Portada */
 
 .portada {
 	display: flex;
@@ -162,7 +161,8 @@ section {
 }
 
 
-// Integrantes
+/* Integrantes */
+
 
 .barra_titulo {
 	background-color: #101419;
@@ -261,7 +261,7 @@ section {
 }
 
 
-// Discografia
+/* Discografia */
 
 
 .discografia {
@@ -407,7 +407,9 @@ a:hover > .albums-img {
   	transition: 0.5s;
 }
 
-// Historia
+
+/* Historia */
+
 
 .historia h2 {
 	font-weight: 500;
@@ -424,6 +426,10 @@ a:hover > .albums-img {
 	position: relative;
 	top: 25px;
 }
+
+
+/* Noticias */
+
 
 .noticias {
 	background: #00000094;
@@ -455,7 +461,9 @@ a:hover > .albums-img {
 	font-size: 0.8rem;
 }
 
-// Contacto
+
+/* Contacto */
+
 
 .contacto {
 	height: auto;
@@ -533,7 +541,10 @@ a:hover > .albums-img {
 	color: #4b4b4b;
 }
 
-//Footer
+
+/* Footer */
+
+
 
 footer {
 	display: flex;
