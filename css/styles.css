@@ -112,11 +112,13 @@ header nav ul li a:hover {
 }
 
 
+
 section {
 	padding: 20px;
 }
 
 
+//Portada
 
 .portada {
 	display: flex;
@@ -160,6 +162,7 @@ section {
 }
 
 
+// Integrantes
 
 .barra_titulo {
 	background-color: #101419;
@@ -256,6 +259,10 @@ section {
 .total_integrantes:hover > .icon-rs {
 	display: block;
 }
+
+
+// Discografia
+
 
 .discografia {
 	background: #d1d1d1;
@@ -400,7 +407,7 @@ a:hover > .albums-img {
   	transition: 0.5s;
 }
 
-
+// Historia
 
 .historia h2 {
 	font-weight: 500;
@@ -447,6 +454,8 @@ a:hover > .albums-img {
 	align-self: end;
 	font-size: 0.8rem;
 }
+
+// Contacto
 
 .contacto {
 	height: auto;
@@ -524,7 +533,7 @@ a:hover > .albums-img {
 	color: #4b4b4b;
 }
 
-
+//Footer
 
 footer {
 	display: flex;
