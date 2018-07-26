@@ -295,16 +295,17 @@ section {
 .titulo_discografia {
 	width: 100%;
 	text-align: center;
-	margin-bottom: 20px;
+	/*! margin-bottom: 20px; */
 	padding: 30px 5px 0px 5px;
 }
 
 .titulo_discografia h2{
 	font-weight: 400;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	color: white;
 	background: #212121;
 	padding: 20px;
+	border-radius: 100px 100px 0% 0%;
 }
 
 .albums {
@@ -448,6 +449,12 @@ a:hover > .albums-img {
 	text-transform: uppercase;
 }
 
+.verMas a:hover {
+	-webkit-box-shadow: 0px 4px 10px 1px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 4px 10px 1px rgba(0,0,0,1);
+	box-shadow: 0px 4px 10px 1px rgba(0,0,0,1);
+}
+
 
 /* Noticias */
 
@@ -573,10 +580,10 @@ a:hover > .albums-img {
 
 footer {
 	display: flex;
-	background: #00000094;
-	color: white;
+	background: #212121;
+	color: #fff;
 	top: 0;
-	padding: 10px;
+	/*! padding: 10px; */
 	width: 100%;
 	height: auto;
 	overflow: auto;
@@ -586,44 +593,52 @@ footer {
 
 .opciones {
 	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid #C62828;
+	text-transform: uppercase;
 }
 
-.opciones h2 {
-	padding: 10px 0px;
-}
 
 .opciones li {
-	padding: 3px 0px;
+	padding: 0px 20px;
+	display: inline-block;
 }
 
-.noticias_footer {
-	text-align: center;
-	padding: 20px;
+.opciones li a {
+	font-size: 0.9rem;
 }
 
-.noticias_footer h2{
-	text-align: center;
-	padding: 10px;
-}
-
-.noticias_footer li {
-	padding: 3px 0px;
-}
 
 .contacto_footer {
-	text-align: right;
-	padding: 20px;
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 10px;
+	width: 100%;
+	justify-content: space-evenly;
 }
 
-.contacto_footer li h2{
-	text-align: right;
-	padding: 10px 0px;
-}
 
 .contacto_footer li{
-	padding: 3px 0px;
+	padding: 0px 0px 20px;
 }
 
+.contacto_footer li a:before {
+	content: url(../img/png/contacto.png);
+	position: relative;
+	right: 10px;
+	top: 5px;
+}
+
+.footer_tel:before {
+	content: url(../img/png/telefono.png);
+	position: relative;
+	right: 10px;
+	top: 7px;
+}
 
 .social {
 	display: flex;
@@ -632,8 +647,7 @@ footer {
 	list-style: none;
 	padding: 10px;
 	width: 100%;
-	justify-content: center;
-	left: -40px;
+	justify-content: space-evenly;
 }
 
 
@@ -641,10 +655,16 @@ footer {
 	padding: 20px;
 }
 
-.social .social_titulo_redes{
-	width: 100%;
-	padding: 10px 0px 0px 0px;
-	text-align: center;
+.social_link {
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+	flex-wrap: wrap;
+}
+
+.social_link p {
+	padding: 5px;
+	font-size: 0.9rem;
 }
 
 
