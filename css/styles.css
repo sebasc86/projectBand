@@ -318,7 +318,7 @@ section {
 	position: absolute;
 	top: 70%;
 	align-self: center;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	display: none;
 }
 
@@ -339,11 +339,11 @@ section {
 }
 
 .albums .album-titulo {
-	color: #ea0000;
+	color: #c51414;
 	position: absolute;
 	top: 65%;
 	align-self: center;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	display: none;
 }
 
@@ -352,12 +352,12 @@ section {
 	position: absolute;
 	top: 73%;
 	align-self: center;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	display: none;
 }
 
 .albums .album-titulo-small {
-	font-size: 0.9rem;
+	font-size: 0.7rem;
 	display: none;
 }
 
@@ -407,7 +407,7 @@ section {
 }
 
 a:hover > .albums-img {
-	opacity: 0.3;
+	opacity: 0.05;
   	transition: 0.5s;
 }
 
