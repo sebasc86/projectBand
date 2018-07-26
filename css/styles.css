@@ -633,6 +633,14 @@ footer {
 	top: 5px;
 }
 
+.copyright {
+	display: block;
+	width: 100%;
+	font-size: 0.8rem;
+	text-align: center;
+	color: gray;
+}
+
 .footer_tel:before {
 	content: url(../img/png/telefono.png);
 	position: relative;
