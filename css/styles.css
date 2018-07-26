@@ -69,7 +69,7 @@ header {
 	justify-content: space-between;
   	position: fixed;
   	top: 0px;
-	background: #ea0000;
+	background: #C62828;
 	border-bottom: 1px solid #000;	
 	width: 100%;
 	height: auto;
@@ -132,7 +132,7 @@ section {
 .titulo {
 	display: block;
 	position: relative;	
-	background-color: #b30101e6;
+	background-color: #C62828;
 	font-size: 2.5rem;
 	color: #fff;	
 	align-self: center;
@@ -165,24 +165,19 @@ section {
 
 
 .barra_titulo {
-	background-color: #101419;
+	background-color: #C62828;
 	width: 100%;
 	padding: 20px;
 	color: white;
+	font-size: 1rem;
+	line-height: 150%;
 }
 
-// .barra_titulo::after {
-// 	border-top: 40px solid #101419;
-// 	border-left: 45px solid transparent;
-// 	border-right: 45px solid transparent;
-// 	width: 0;
-// 	height: 0;
-// 	content: "";
-// 	display: block;
-// 	position: absolute;
-// 	top: 100%;
-// 	left: 10px;
-// }
+.barra_titulo h2{
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+}
 
 
 .integrantes ul {
@@ -210,7 +205,7 @@ section {
 }
 
 .total_integrantes:hover {
-	border: 15px solid #c51414;
+	border: 15px solid #C62828;
 }
 
 
@@ -265,7 +260,7 @@ section {
 
 
 .discografia {
-	background: #d1d1d1;
+	/*! background: #d1d1d1; */
 }
 
 .discografia ul{
@@ -273,34 +268,42 @@ section {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	margin: 20px 0px;
-	padding: 10px 0px;
 	background: #fff;
 	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 }
 
-.barra_discografia {
-	background-color: #101419;
+.titulo_section{
+	background-color: #c62828;
+	font-size: 1.5rem;
 	width: 100%;
 	position: relative;
 	padding: 20px;
 	color: #fff;
-	margin-top: 40px;
+}
+
+.discografia {
+	margin-top: 0px;
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	font-size: 1.5rem;
+	line-height: 110%;
+	text-transform: uppercase;
 }
 
 .titulo_discografia {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 20px;
-	padding: 5px;
+	padding: 30px 5px 0px 5px;
 }
 
 .titulo_discografia h2{
-	font-weight: bold;
+	font-weight: 400;
 	font-size: 1.5rem;
 	color: white;
-	background: #ea0000;
+	background: #212121;
 	padding: 20px;
 }
 
@@ -410,21 +413,39 @@ a:hover > .albums-img {
 
 /* Historia */
 
+.historia article {
+	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+}
 
 .historia h2 {
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 150%;
 	position: relative;
 	padding: 20px;
-	top: 25px;
 }
 
 .historia p{
 	font-weight: 300;
 	line-height: 150%;
-	padding: 20px;
 	position: relative;
-	top: 25px;
+	padding: 0px 20px;
+}
+
+
+.verMas {
+	padding: 50px 0 50px 20px;
+}
+
+.verMas a{
+	font-size: 1.2rem;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	background-color: #C62828;
+	color: #ecf0f1;
+	padding: 20px 60px;
+	text-transform: uppercase;
 }
 
 
@@ -432,7 +453,7 @@ a:hover > .albums-img {
 
 
 .noticias {
-	background: #00000094;
+	/*! background: #00000094; */
 }
 
 .noticias ul {
@@ -467,13 +488,18 @@ a:hover > .albums-img {
 
 .contacto {
 	height: auto;
-	background: #ddd;
-}
+	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	flex-direction: column;
+	background: #e9e9e9;
+	}
 
 .contacto div {
 	position: relative;
 	width: 40%;
 	margin: auto;
+	padding: 20px
 }
 
 .contacto form {
@@ -487,14 +513,13 @@ a:hover > .albums-img {
 }
 
 .contacto .submit {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	padding: 10px 5em;
 	background: #f99104;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	color: #fff;
 	cursor: pointer;
 	width: 56%;
-	border-bottom: 2px solid #A26E28;
 }
 
 .contacto input {
