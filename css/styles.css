@@ -263,7 +263,6 @@ section {
 /* Discografia */
 
 
-
 .discografia ul{
 	display: flex;
 	flex-wrap: wrap;
@@ -412,6 +411,7 @@ a:hover > .albums-img {
 
 /* Historia */
 
+
 .historia article {
 	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
@@ -433,7 +433,6 @@ a:hover > .albums-img {
 	position: relative;
 	padding: 0px 20px;
 }
-
 
 .verMas {
 	padding: 50px 0 50px 20px;
@@ -457,6 +456,7 @@ a:hover > .albums-img {
 
 
 /* Noticias */
+
 
 .noticias {
 	margin-top: 50px;
@@ -514,7 +514,7 @@ a:hover > .albums-img {
 	margin-top: 50px;
 	padding-bottom: 20px;
 	border-radius: 10px;
-	}
+}
 
 .contacto div {
 	position: relative;
@@ -603,13 +603,11 @@ a:hover > .albums-img {
 /* Footer */
 
 
-
 footer {
 	display: flex;
 	background: #212121;
 	color: #fff;
 	top: 0;
-	/*! padding: 10px; */
 	width: 100%;
 	height: auto;
 	overflow: auto;
@@ -627,7 +625,6 @@ footer {
 	text-transform: uppercase;
 }
 
-
 .opciones li {
 	padding: 0px 20px;
 	display: inline-block;
@@ -636,7 +633,6 @@ footer {
 .opciones li a {
 	font-size: 0.9rem;
 }
-
 
 .contacto_footer {
 	display: flex;
@@ -647,7 +643,6 @@ footer {
 	width: 100%;
 	justify-content: space-evenly;
 }
-
 
 .contacto_footer li{
 	padding: 0px 0px 20px;
@@ -685,7 +680,6 @@ footer {
 	justify-content: space-evenly;
 }
 
-
 .social li{
 	padding: 20px;
 }
@@ -702,12 +696,10 @@ footer {
 	font-size: 0.9rem;
 }
 
-
 .social li a img{
 	width: 50px;
 	height: 50px
 }
-
 
 .buttom {
 	position: fixed;
@@ -742,7 +734,7 @@ footer {
 	}
 
 
-		/* Contacto */
+	/* Contacto */
 
 	.contacto div {
 		max-width: 70%;
@@ -804,7 +796,6 @@ footer {
 		flex-wrap: wrap;
 	}
 
-
 	.verMas a{
 		font-size: 1rem;
 		padding: 15px 30px;
@@ -862,7 +853,7 @@ footer {
 
 	
 
-  /*Footer*/
+  	/*Footer*/
 
 	.opciones {
 		padding: 10px;
