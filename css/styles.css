@@ -482,10 +482,11 @@ a:hover > .albums-img {
 	display: flex;
 	width: 33%;
 	padding: 20px;
-	-webkit-box-shadow: -1px 12px 5px 1px rgba(0,0,0,0.58);
-	-moz-box-shadow: -1px 12px 5px 1px rgba(0,0,0,0.58);
-	box-shadow: -1px 12px 5px 1px rgba(0,0,0,0.58);
+	-webkit-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+	-moz-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+	box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
 	flex-direction: column;
+	margin-top: 20px;
 }
 
 .noticias ul li h3 {
@@ -731,12 +732,12 @@ footer {
 	/* Noticias */
 
 	.noticias ul {
-		flex-direction: column;
 	}
 
 	.noticias ul li{
 		width: 100%;
 		padding: 10px;
+		margin-top: 20px;
 	}
 
 
