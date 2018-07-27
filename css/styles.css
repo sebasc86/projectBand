@@ -499,7 +499,7 @@ a:hover > .albums-img {
 
 .contacto div {
 	position: relative;
-	max-width: 60%;
+	max-width: 50%;
 	margin: auto;
 	padding: 20px
 }
@@ -532,6 +532,12 @@ a:hover > .albums-img {
 	color: #555;
 }
 
+.contacto input:focus {
+	border:1px solid #000;
+	background-color:#FFFDF4;
+
+}
+
 .contacto .usuario {
 	background: url(../img/png/004-user.png) no-repeat 96% 55%;
 }
@@ -558,6 +564,12 @@ a:hover > .albums-img {
 	padding: .8em 4em .8em 1em;
 	font-size: 1em;
 	color: #555;
+}
+
+.contacto textarea:focus {
+	border:1px solid #000;
+	background-color:#FFFDF4;
+
 }
 
 .contacto form h3 {
