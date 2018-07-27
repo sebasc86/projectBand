@@ -466,6 +466,7 @@ a:hover > .albums-img {
 .noticias ul {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	background: #fff;
 }
 
