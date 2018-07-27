@@ -81,10 +81,11 @@ header nav {
 	display: inline-block;
 }
 
-header h1{
+header a h1{
 	font-family: 'Rock Salt', cursive;
 	font-size: 1.3rem;
 	text-shadow: 1px 2px 0 #fee10a;
+	color: #000;
 }
 
 header nav ul li {
@@ -183,7 +184,7 @@ section {
 .integrantes ul {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 40px;
+	margin-top: 50px;
 	justify-content: space-around;
 	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
@@ -259,49 +260,39 @@ section {
 /* Discografia */
 
 
-.discografia {
-	/*! background: #d1d1d1; */
-}
 
 .discografia ul{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin: 20px 0px;
+	margin-top: 50px;
 	background: #fff;
 	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 }
 
-.titulo_section{
-	background-color: #c62828;
-	font-size: 1.5rem;
-	width: 100%;
-	position: relative;
-	padding: 20px;
-	color: #fff;
-}
 
-.discografia {
-	margin-top: 0px;
-	font-weight: 400;
-	letter-spacing: 0.05rem;
-	font-size: 1.5rem;
-	line-height: 110%;
-	text-transform: uppercase;
+.titulo_barra {
+		font-size: 1.5rem;
+		line-height: 110%;
+		font-weight: 400;
+		letter-spacing: 0.05rem;
+		text-transform: uppercase;
+		background-color: #C62828;
+		padding: 20px;
+		color: white;
 }
 
 .titulo_discografia {
 	width: 100%;
 	text-align: center;
-	/*! margin-bottom: 20px; */
 	padding: 30px 5px 0px 5px;
 }
 
 .titulo_discografia h2{
 	font-weight: 400;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	color: white;
 	background: #212121;
 	padding: 20px;
@@ -418,6 +409,7 @@ a:hover > .albums-img {
 	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
+	margin-top: 50px;
 }
 
 .historia h2 {
@@ -458,9 +450,8 @@ a:hover > .albums-img {
 
 /* Noticias */
 
-
 .noticias {
-	/*! background: #00000094; */
+	margin-top: 50px;
 }
 
 .noticias ul {
@@ -468,6 +459,7 @@ a:hover > .albums-img {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	background: #fff;
+	
 }
 
 .noticias ul li{
@@ -501,11 +493,13 @@ a:hover > .albums-img {
 	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	flex-direction: column;
 	background: #e9e9e9;
+	margin-top: 50px;
+	padding-bottom: 20px;
 	}
 
 .contacto div {
 	position: relative;
-	width: 40%;
+	max-width: 60%;
 	margin: auto;
 	padding: 20px
 }
@@ -597,6 +591,7 @@ footer {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	border-bottom: 1px solid #C62828;
 	text-transform: uppercase;
 }
@@ -697,7 +692,262 @@ footer {
 }	
 
 
+@media screen and (max-width: 1024px) {
 
+	section {
+		padding: 10px;
+	}
+
+
+	/* Noticias */
+
+	.noticias ul {
+		flex-direction: column;
+	}
+
+	.noticias ul li{
+		width: 100%;
+		padding: 10px;
+	}
+
+
+		/* Contacto */
+
+	.contacto div {
+		max-width: 70%;
+		padding: 0;
+	}
+
+	.contacto form {
+		padding: 10px 0px;
+		margin: 10px;
+	}
+
+	.contacto .submit {
+		font-size: 1rem;
+		padding: 10px;
+	}
+
+	.contacto input {
+		width: 95%;
+		margin: auto;
+	}
+
+	.contacto textarea {
+		width: 95%;
+		color: #555;
+	}
+
+	.contacto form h3 {
+		font-size: 1.2rem;
+		text-align: center;
+		font-weight: 400;
+		padding: 20px;
+		color: #4b4b4b;
+	}
+
+}
+
+
+@media screen and (max-width: 768px) {
+		
+	section {
+		padding: 5px;
+	}
+	
+
+	/* Historia */
+
+	.historia h2 {
+		padding: 20px 10px;
+	}
+
+	.historia p{
+		padding: 0px 10px;
+	}
+
+	.verMas {
+		display: flex;
+		padding: 30px 0 30px 20px;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+
+	.verMas a{
+		font-size: 1rem;
+		padding: 15px 30px;
+		text-transform: uppercase;
+	}
+
+  
+
+	/* Noticias */
+
+	.noticias ul {
+		flex-direction: column;
+	}
+
+	.noticias ul li{
+		width: 100%;
+		padding: 10px;
+	}
+
+
+	/* Contacto */
+
+	.contacto div {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.contacto form {
+		padding: 10px 0px;
+		margin: 10px;
+	}
+
+	.contacto .submit {
+		font-size: 1rem;
+		padding: 10px;
+	}
+
+	.contacto input {
+		width: 95%;
+		margin: auto;
+	}
+
+	.contacto textarea {
+		width: 95%;
+		color: #555;
+	}
+
+	.contacto form h3 {
+		font-size: 1.2rem;
+		text-align: center;
+		font-weight: 400;
+		padding: 20px;
+		color: #4b4b4b;
+	}
+
+	
+
+  /*Footer*/
+
+	.opciones {
+		padding: 10px;
+		width: 100%;
+		display: block;
+		border-bottom: 1px solid #C62828;
+		text-transform: uppercase;
+	}
+
+	.opciones li {
+		display: block;
+	}
+
+	.opciones li a {
+		display: block;
+		font-size: 1rem;
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+
+	}
+
+	.buttom {
+		display: none;
+	}	
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+	@keyframes slidein {
+	  0% {
+	    margin-left: 300%;
+	    display: flex;
+	    justify-content: center;
+	    width: 350px;
+	  }
+
+	  100% {
+	    margin-left: 0%;
+	    display: flex;
+	    justify-content: center;
+	    width: 350px;
+	  }
+	}
+
+	@keyframes latidos {
+	    from { 
+	    	transform: none; 
+	    	position: absolute;
+			top: 50%;
+			left: 35%;
+			width: 100px;
+			height: 100px;
+
+	    }
+	    50% { 
+
+	    	transform: scale(1.5);
+			position: absolute;
+			top: 50%;
+			left: 35%;
+			width: 100px;
+			height: 100px;
+	     }
+	    to { 
+	    	transform: none;
+	    	position: absolute;
+			top: 50%;
+			left: 35%;
+			width: 100px;
+			height: 100px; 
+		}
+	}
+  
+  	
+	.titulo {
+		font-size: 1.1rem;
+		font-weight: bold;
+	}
+
+	.portada {
+		background-position: 75% 80px;
+	}
+
+	.portada img {
+	    top: 50%;
+	    left: 35%;
+	    width: 100px;
+	    height: 100px;
+	}
+
+
+	/*Dentro de Integrantes y Discografia*/
+
+	.barra_titulo {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	/*Discografia*/
+
+  	.albums img {
+		width: 300px;
+		height: 300px;
+	}
+
+	/*Titulos de las otras seccions*/
+
+	.titulo_barra {
+		text-align: center;
+	}
+  
+}
 
 
 
