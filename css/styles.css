@@ -857,13 +857,6 @@ footer {
         left: 0;
 	}
 
-	header .open {
-    	display: block;/*el menu aparece*/
-	}
-	header .bottom_ham .open {
-    	background: rgba(0,0,0,0.65);/*el boton cambia de color*/
-	}
-
 	header a {
 		align-self: center;
 		padding: 10px;
