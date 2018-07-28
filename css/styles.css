@@ -836,35 +836,35 @@ footer {
 	section {
 		padding: 5px;
 	}
+
+	/*Header*/
 	
 	header {
-		padding: 5px;
+		padding: 10px 5px 5px 5px;
 	}
 
 	.botton_ham {
 	 display: inline-block;
 	}
 
-	.menu nav {
+	header nav {
         position: absolute;
         z-index: 600;
         background: #121212;
-        min-width: 20rem;
+        min-width: 100%;
         display: none;
         top: 100%;
         left: 0;
 	}
 
-	.menu .open {
+	header .open {
     	display: block;/*el menu aparece*/
 	}
-	.menu .bottom_ham .open {
+	header .bottom_ham .open {
     	background: rgba(0,0,0,0.65);/*el boton cambia de color*/
 	}
 
 	header a {
-		text-decoration: none;
-		color: white;
 		align-self: center;
 		padding: 10px;
 	}
@@ -874,6 +874,24 @@ footer {
 	}
 
 
+	header nav ul li {
+		display: block;
+	}
+
+	header nav ul li a {
+		display: block;
+		position: relative;
+		left: -15px;
+	}
+
+	header nav ul li a:hover{
+		box-shadow: inherit;
+		background-color: inherit;
+		color: #ecf0f1;
+		padding: 10px;
+	}
+
+	/*Portada*/
 	
 	.titulo {
 		font-size: 1.3rem;
@@ -891,7 +909,23 @@ footer {
 	    height: 100px;
 	}
 
+	/*Integrantes*/
+	
+	.integrantes ul {
+		margin-top: 100px;
+	}
+	
+	/* Discografia */
+
+	.discografia ul {
+		margin-top: 100px;
+	}
+
 	/* Historia */
+
+	.historia article {
+		margin-top: 100px;
+	}
 
 	.historia h2 {
 		padding: 20px 10px;
@@ -918,6 +952,10 @@ footer {
 
 	/* Noticias */
 
+	.noticias {
+		margin-top: 100px;
+	}
+
 	.noticias ul {
 		flex-direction: column;
 	}
@@ -929,6 +967,10 @@ footer {
 
 
 	/* Contacto */
+
+	.contacto {
+		margin-top: 100px;
+	}
 
 	.contacto div {
 		max-width: 100%;

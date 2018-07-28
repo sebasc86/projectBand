@@ -6,17 +6,16 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
 		<title>The Rolling Stones</title>
 
 	</head>
 	<body>
-		<header id="menu" class="menu">
+		<header>
 			<span class="botton_ham">
 				<img src="img/png/menu.png">
 		   	</span>
 			<a href="#"><h1>The Rolling Stones</h1></a>
-			<nav>
+			<nav class="nav">
 				<ul>
 					<li><a href="#integrantes">Integrantes</a></li>
 					<li><a href="#discografia">Discografia</a></li>
@@ -646,15 +645,39 @@
 			<a class="buttom" href="#portada">Inicio</a>
 
 		</footer>			
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 		<script type="text/javascript">
-		$(document).ready(function(){
-		    $("#menu > .botton_ham").click(function(){
-		     $("#menu > .botton_ham").toggleClass("open");
-		     $("#menu > nav").toggleClass("open");
-		    });
-		});
+			$( document ).ready(function() {
+
+				$(".botton_ham").on("click", function(event){
+				    $(".nav").slideToggle();
+				    event.stopImmediatePropagation();
+				});
+
+				$('*:not(.botton_ham)').on('click', function(e){
+					if ($('.nav').is(':visible')) {
+						$('.nav').slideUp();
+						e.stopImmediatePropagation();
+					}
+				});
+
+
+			});
+				
+
+			
+				 	
+			   	
+
+
+				
+
+					
+
+
 		</script>
+
 	</body>
 </html>
