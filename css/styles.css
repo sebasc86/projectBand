@@ -644,11 +644,11 @@ footer {
 	justify-content: space-evenly;
 }
 
-.contacto_footer li{
+.contacto_footer li {
 	padding: 0px 0px 20px;
 }
 
-.contacto_footer li a:before {
+.footer_mail:before {
 	content: url(../img/png/contacto.png);
 	position: relative;
 	right: 10px;
@@ -1031,6 +1031,24 @@ footer {
 	.titulo_barra {
 		text-align: center;
 	}
+
+
+	/*Footer*/
+
+/*	.contacto_footer {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer_mail a:before {
+		content: url(../img/png/contacto.png);
+		position: relative;
+		right: 10px;
+		top: 5px;
+	}*/
+
+
+
   
 }
 
