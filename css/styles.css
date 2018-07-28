@@ -79,6 +79,18 @@ header {
 
 header nav {
 	display: inline-block;
+	padding: 5px;
+}
+
+.botton_ham {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.botton_ham img{
+	width: 60px;
+	height: 60px;
 }
 
 header a h1{
@@ -824,6 +836,43 @@ footer {
 	section {
 		padding: 5px;
 	}
+	
+	header {
+		padding: 5px;
+	}
+
+	.botton_ham {
+	 display: inline-block;
+	}
+
+	.menu nav {
+        position: absolute;
+        z-index: 600;
+        background: #121212;
+        min-width: 20rem;
+        display: none;
+        top: 100%;
+        left: 0;
+	}
+
+	.menu .open {
+    	display: block;/*el menu aparece*/
+	}
+	.menu .bottom_ham .open {
+    	background: rgba(0,0,0,0.65);/*el boton cambia de color*/
+	}
+
+	header a {
+		text-decoration: none;
+		color: white;
+		align-self: center;
+		padding: 10px;
+	}
+
+	header a h1 {
+		font-size: 1rem;
+	}
+
 
 	
 	.titulo {
@@ -1001,7 +1050,7 @@ footer {
 	}
 
 	.portada {
-		background-position: 70% 80px;
+		background-position: 70% 50px;
 	}
 
 	.portada img {

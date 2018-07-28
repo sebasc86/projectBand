@@ -6,10 +6,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
 		<title>The Rolling Stones</title>
+
 	</head>
 	<body>
-		<header>
+		<header id="menu" class="menu">
+			<span class="botton_ham">
+				<img src="img/png/menu.png">
+		   	</span>
 			<a href="#"><h1>The Rolling Stones</h1></a>
 			<nav>
 				<ul>
@@ -641,5 +646,15 @@
 			<a class="buttom" href="#portada">Inicio</a>
 
 		</footer>			
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+		    $("#menu > .botton_ham").click(function(){
+		     $("#menu > .botton_ham").toggleClass("open");
+		     $("#menu > nav").toggleClass("open");
+		    });
+		});
+		</script>
 	</body>
 </html>
