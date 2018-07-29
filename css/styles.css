@@ -317,19 +317,23 @@ section {
 	border-radius: 100px 100px 0% 0%;
 }
 
-.cierre_discografia {
+.cierre_discografia,
+.cierre_discografia_2 {
 	width: 99%;
-	padding: 33px;
 	background: #212121;
 	border-radius: 0% 0% 100px 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5px;
+	cursor: pointer;
 }
 
-.albums_oculto,
-.albums_oculto_2,
-.albums_oculto_3,
-.albums_oculto_4, 
-.albums_oculto_5 {
-	display: none;
+.flecha,
+.flecha_2 {
+	width: 50px;
+	height: 50px;
+	transform: rotate(180deg);
 }
 
 
@@ -929,6 +933,22 @@ footer {
 	.discografia ul {
 		margin-top: 100px;
 	}
+
+	/* Cierre discografia */
+	.albums_oculto,
+	.albums_oculto_2,
+	.albums_oculto_3,
+	.albums_oculto_4 {
+		display: none;
+	}
+	.flecha,
+	.flecha2 {
+		width: 50px;
+		height: 50px;
+		transform: rotate(0deg);
+	}
+
+
 
 	/* Historia */
 
