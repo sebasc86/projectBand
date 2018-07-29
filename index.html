@@ -689,12 +689,22 @@
 							e.preventDefault();
 						}  else if ($('.albums_vivo_oculto_3').is(':visible')) {
 							$(".flecha_2").css("transform", "rotate(0deg)");
-							$('.albums_vivo_oculto_3').slideUp();
-							$('.albums_vivo_oculto_2').slideUp();
-							$('.albums_vivo_oculto').slideUp();
-							$('html,body').animate({
-       							scrollTop: $(".cierre_discografia").offset().top
-   							});
+							if ((screen.width > 768)) {
+								$('html,body').animate({
+       								scrollTop: $(".cierre_discografia").offset().top
+   								});
+   								$('.albums_vivo_oculto_3').slideUp();
+								$('.albums_vivo_oculto_2').slideUp();
+								$('.albums_vivo_oculto').slideUp();
+							} else {
+								$('html,body').animate({
+       								scrollTop: $(".cierre_discografia").offset().top
+   								}, -7000);
+   								$('.albums_vivo_oculto_3').slideUp();
+								$('.albums_vivo_oculto_2').slideUp();
+								$('.albums_vivo_oculto').slideUp();
+							}
+							
 							e.preventDefault();
 						}
 				});
@@ -732,9 +742,6 @@
        								scrollTop: $(".albums_oculto_4").offset().top
    							 	});
 							}
-							$('html,body').animate({
-       							 scrollTop: $(".albums_oculto_4").offset().top
-   							 });
 							$(".flecha").css("transform", "rotate(180deg)");
 							ev.preventDefault();
 						} else if ($('.albums_oculto_4').is(':visible')) {
@@ -743,10 +750,25 @@
 							$('.albums_oculto_3').slideUp();
 							$('.albums_oculto_2').slideUp();
 							$('.albums_oculto').slideUp();
-							$('html,body').animate({
-       							 scrollTop: $(".discografia").offset().top
-   							 });
-							ev.preventDefault();
+
+							if ((screen.width > 768)) {
+								$('html,body').animate({
+       								scrollTop: $(".discografia").offset().top
+   								});
+   								$('.albums_oculto_4').slideUp();
+								$('.albums_oculto_3').slideUp();
+								$('.albums_oculto_2').slideUp();
+								$('.albums_oculto').slideUp();
+							} else {
+								$('html,body').animate({
+       								scrollTop: $(".discografia").offset().top
+   								}, -7000);
+   								$('.albums_oculto_4').slideUp();
+								$('.albums_oculto_3').slideUp();
+								$('.albums_oculto_2').slideUp();
+								$('.albums_oculto').slideUp();
+							}
+						 	ev.preventDefault();
 						}	
 				});
 
