@@ -941,6 +941,14 @@ footer {
 	.albums_oculto_4 {
 		display: none;
 	}
+
+	.albums_vivo_oculto,
+	.albums_vivo_oculto_2,
+	.albums_vivo_oculto_3 {
+		display: none;
+	}
+
+
 	.flecha,
 	.flecha2 {
 		width: 50px;
