@@ -664,22 +664,28 @@
 						if ($('.albums_vivo_oculto').is(':hidden')) {
 							$(".flecha_2").css("transform", "rotate(0deg)");	
 							$('.albums_vivo_oculto').slideDown();
-							$('html,body').animate({
-       							 scrollTop: $("#albums_vivo_visible").offset().top
+							if ((screen.width > 768)) {
+								$('html,body').animate({
+       							 	scrollTop: $("#albums_vivo_visible").offset().top
    							 });
+							}
 							e.preventDefault();
 						} else if ($('.albums_vivo_oculto_2').is(':hidden')) {
 							$('.albums_vivo_oculto_2').slideDown();
-							$('html,body').animate({
-       							 scrollTop: $(".albums_vivo_oculto").offset().top
-   							 });
+							if ((screen.width > 768)) {
+								$('html,body').animate({
+       							 	scrollTop: $(".albums_vivo_oculto").offset().top
+   							 	});
+							}
 							e.preventDefault();
 						}  else if ($('.albums_vivo_oculto_3').is(':hidden')) {
 							$('.albums_vivo_oculto_3').slideDown();
-							$('html,body').animate({
-       							 scrollTop: $(".albums_vivo_oculto_2").offset().top
-   							 });
-							$(".flecha_2").css("transform", "rotate(180deg)");
+							if ((screen.width > 768)) {
+								$('html,body').animate({
+       							 	scrollTop: $(".albums_vivo_oculto_2").offset().top
+	   							 });
+							}
+							$(".flecha_2").css("transform", "rotate(180deg)");					
 							e.preventDefault();
 						}  else if ($('.albums_vivo_oculto_3').is(':visible')) {
 							$(".flecha_2").css("transform", "rotate(0deg)");
@@ -687,8 +693,8 @@
 							$('.albums_vivo_oculto_2').slideUp();
 							$('.albums_vivo_oculto').slideUp();
 							$('html,body').animate({
-       							 scrollTop: $(".cierre_discografia").offset().top
-   							 });
+       							scrollTop: $(".cierre_discografia").offset().top
+   							});
 							e.preventDefault();
 						}
 				});
@@ -697,24 +703,35 @@
 						if ($('.albums_oculto').is(':hidden')) {
 							$(".flecha").css("transform", "rotate(0deg)");	
 							$('.albums_oculto').slideDown();
-							$('html,body').animate({
-       							 scrollTop: $("#album_visible").offset().top
-   							 });
+							if ((screen.width > 768)) {
+								$('html,body').animate({
+       							 	scrollTop: $("#album_visible").offset().top
+   							 	});
+							}
 							ev.preventDefault();
 						} else if ($('.albums_oculto_2').is(':hidden')) {
 							$('.albums_oculto_2').slideDown();
-							$('html,body').animate({
-       							 scrollTop: $(".albums_oculto").offset().top
-   							 });
+							if ((screen.width > 768)) {
+								$('html,body').animate({
+       							 	scrollTop: $(".albums_oculto").offset().top
+   								 });
+							}
 							ev.preventDefault();
 						} else if ($('.albums_oculto_3').is(':hidden')) {
 							$('.albums_oculto_3').slideDown();
-							$('html,body').animate({
-       							 scrollTop: $(".albums_oculto_2").offset().top
-   							 });
+							if ((screen.width > 768)) {
+								$('html,body').animate({
+       							 	scrollTop: $(".albums_oculto_2").offset().top
+   							 	});
+							}
 							ev.preventDefault();
 						} else if ($('.albums_oculto_4').is(':hidden')) {
 							$('.albums_oculto_4').slideDown();
+							if ((screen.width > 768)) {
+								$('html,body').animate({
+       								scrollTop: $(".albums_oculto_4").offset().top
+   							 	});
+							}
 							$('html,body').animate({
        							 scrollTop: $(".albums_oculto_4").offset().top
    							 });
