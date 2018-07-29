@@ -317,6 +317,22 @@ section {
 	border-radius: 100px 100px 0% 0%;
 }
 
+.cierre_discografia {
+	width: 99%;
+	padding: 33px;
+	background: #212121;
+	border-radius: 0% 0% 100px 100px;
+}
+
+.albums_oculto,
+.albums_oculto_2,
+.albums_oculto_3,
+.albums_oculto_4, 
+.albums_oculto_5 {
+	display: none;
+}
+
+
 .albums {
 	position: relative;
 	padding: 5px;
