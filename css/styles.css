@@ -571,11 +571,22 @@ a:hover > .albums-img {
 .contacto .submit {
 	font-size: 1.1rem;
 	padding: 10px 5em;
-	background: #f99104;
+	background: #ff9405;
 	text-transform: uppercase;
 	color: #fff;
 	cursor: pointer;
-	width: 56%;
+	width: 50%;
+	-webkit-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+	-moz-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+	box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+	border-bottom: 0;
+}
+
+.contacto .submit:hover {
+    background: #ec8a07;
+    -webkit-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+    box-shadow: -1px 4px 5px 1px rgba(0,0,0,0.58);
 }
 
 .contacto input {
@@ -593,19 +604,19 @@ a:hover > .albums-img {
 }
 
 .contacto .usuario {
-	background: url(../img/png/004-user.png) no-repeat 96% 55%;
+	background: url(../img/png/004-user.png) no-repeat 99% 55%;
 }
 
 .contacto .telefono {
-	background: url(../img/png/003-smartphone.png) no-repeat 96% 55%;
+	background: url(../img/png/003-smartphone.png) no-repeat 99% 55%;
 }
 
 .contacto .email {
-	background: url(../img/png/002-email.png) no-repeat 96%;
+	background: url(../img/png/002-email.png) no-repeat 99%;
 }
 
 .contacto .mensaje {
-	background: url(../img/png/001-information-button.png) no-repeat 96% 5%;
+	background: url(../img/png/001-information-button.png) no-repeat 99% 5%;
 	border: none;
 	border-bottom: 2px solid #c6c2c2;
 	margin-bottom: 40px;
@@ -635,7 +646,7 @@ a:hover > .albums-img {
 	color: #4b4b4b;
 	position: relative;
 	align-self: flex-start;
-	left: 50px;
+	left: 45px;
 	top: 10px;
 	font-size: 1rem;
 }
@@ -1031,6 +1042,13 @@ footer {
 	.contacto .submit {
 		font-size: 1rem;
 		padding: 10px;
+	}
+
+	.contacto .submit:hover {
+	    background: #ec8a07;
+	    -webkit-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+	    -moz-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+	    box-shadow: -1px 4px 5px 1px rgba(0,0,0,0.58);
 	}
 
 	.contacto input {
