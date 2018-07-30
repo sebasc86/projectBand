@@ -790,14 +790,17 @@
 
 
 				$(".botton_ham").on("click", function(event){
-				    $(".nav").slideToggle();
-				    event.stopImmediatePropagation();
+						$(".nav").slideDown();
+				    	event.stopImmediatePropagation();			    
 				});
 
 				$('*:not(.botton_ham)').on('click', function(e){
 					if ($('.nav').is(':visible')) {
-						$('.nav').slideUp();
-						e.stopImmediatePropagation();
+						if ((screen.width <= 768)) {
+							$('.nav').slideUp();
+							e.stopImmediatePropagation();
+						}
+						
 					}
 				});
 
