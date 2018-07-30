@@ -582,14 +582,14 @@ a:hover > .albums-img {
 	padding: 10px;
 	width: 80%;
 	margin: auto;
-	border: 1px solid #CECCCC;
+	border: none;
 	color: #555;
+	border-bottom: 2px solid #d1d1d1;
 }
 
 .contacto input:focus {
-	border:1px solid #000;
-	background-color:#FFFDF4;
 
+	border-bottom: 2px solid #d50c14;
 }
 
 .contacto .usuario {
@@ -606,6 +606,9 @@ a:hover > .albums-img {
 
 .contacto .mensaje {
 	background: url(../img/png/001-information-button.png) no-repeat 96% 5%;
+	border: none;
+	border-bottom: 2px solid #c6c2c2;
+	margin-bottom: 40px;
 }
 
 .contacto textarea {
@@ -621,17 +624,20 @@ a:hover > .albums-img {
 }
 
 .contacto textarea:focus {
-	border:1px solid #000;
-	background-color:#FFFDF4;
+	border-bottom:2px solid #ad0000;
+	/*! background-color:#FFFDF4; */
 
 }
 
 .contacto form h3 {
-	font-size: 1.5em;
-	text-align: center;
-	font-weight: 400;
-	padding: 20px;
+	font-weight: 300;
+	padding: 10px;
 	color: #4b4b4b;
+	position: relative;
+	align-self: flex-start;
+	left: 50px;
+	top: 10px;
+	font-size: 1rem;
 }
 
 
