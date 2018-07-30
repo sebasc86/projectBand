@@ -562,7 +562,10 @@ a:hover > .albums-img {
 	padding: 20px;
 	background: #fff;
 	margin: 20px;
-	border: 1px solid black;
+	/*! border: 1px solid black; */
+	-webkit-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+	-moz-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
+	box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
 }
 
 .contacto .submit {
