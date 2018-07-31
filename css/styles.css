@@ -74,7 +74,7 @@ header {
 	width: 100%;
 	height: auto;
 	z-index: 10;
-  	padding: 15px 20px;
+  	padding: 10px;
 }
 
 header nav {
@@ -89,15 +89,16 @@ header nav {
 }
 
 .botton_ham img{
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 }
 
 h1{
 	font-family: 'Rock Salt', cursive;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	text-shadow: 1px 2px 0 #fee10a;
 	color: #000;
+	padding: 5px;
 }
 
 header nav ul li {
@@ -110,7 +111,7 @@ header nav ul li {
 
 header nav ul li a {
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	padding: 10px;
 	font-weight: 400;
 }
@@ -890,11 +891,13 @@ footer {
 	/*Header*/
 	
 	header {
-		padding: 10px 5px 5px 5px;
+		padding: 0;
 	}
 
 	.botton_ham {
 	 display: inline-block;
+	 align-self: flex-end;
+	 padding-left: 5px;
 	}
 
 	header nav {
@@ -942,7 +945,7 @@ footer {
 	}
 
 	.portada {
-		background-position: 55% 80px;
+		background-position: 55% 40px;
 	}
 
 	.portada img {
@@ -955,7 +958,7 @@ footer {
 	/*Integrantes*/
 	
 	.integrantes ul {
-		margin-top: 100px;
+		margin-top: 60px;
 	}
 	
 	/* Discografia */
