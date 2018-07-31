@@ -523,7 +523,7 @@ a:hover > .albums-img {
 	margin-top: 20px;
 	border-radius: 10px;
 	flex-wrap: wrap;
-	justify-content: end;
+	justify-content: flex-end;
 }
 
 .noticias ul li h3 {
