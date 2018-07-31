@@ -74,7 +74,7 @@ header {
 	width: 100%;
 	height: auto;
 	z-index: 10;
-  	padding: 20px;
+  	padding: 15px 20px;
 }
 
 header nav {
@@ -95,7 +95,7 @@ header nav {
 
 header a h1{
 	font-family: 'Rock Salt', cursive;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	text-shadow: 1px 2px 0 #fee10a;
 	color: #000;
 }
@@ -112,7 +112,7 @@ header nav ul li a {
 	text-decoration: none;
 	font-size: 1rem;
 	padding: 10px;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 
@@ -183,7 +183,7 @@ section {
 	width: 100%;
 	padding: 20px;
 	color: white;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	line-height: 150%;
 	border-radius: 10px 10px 0px 0px;
 }
@@ -290,7 +290,7 @@ section {
 
 
 .titulo_barra {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		line-height: 110%;
 		font-weight: 400;
 		letter-spacing: 0.05rem;
@@ -452,11 +452,12 @@ a:hover > .albums-img {
 	border-radius: 10px;
 }
 
-.historia h2 {
+.historia div article h2 {
 	font-weight: 400;
 	line-height: 150%;
 	position: relative;
 	padding: 20px;
+	color: #212121;
 }
 
 .historia p{
@@ -464,6 +465,7 @@ a:hover > .albums-img {
 	line-height: 150%;
 	position: relative;
 	padding: 0px 20px;
+	color: #414141;
 }
 
 
@@ -517,18 +519,28 @@ a:hover > .albums-img {
 	-webkit-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
 	box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.58);
-	flex-direction: column;
 	margin-top: 20px;
+	border-radius: 10px;
+	flex-wrap: wrap;
+	justify-content: end;
 }
 
 .noticias ul li h3 {
 	padding: 20px 0px;
+	color: #212121;
+	font-weight: 400;
+}
+
+.noticias ul li p {
+	color: #414141;
+	font-weight: 300;
 }
 
 .noticias ul li span {
 	padding: 15px 0px;
-	align-self: end;
+	align-self: flex-end;
 	font-size: 0.8rem;
+	color: #838383;
 }
 
 
@@ -784,6 +796,7 @@ footer {
 		width: 100%;
 		padding: 10px;
 		margin-top: 20px;
+		flex-direction: column;
 	}
 
 
@@ -990,7 +1003,7 @@ footer {
 		margin-top: 100px;
 	}
 
-	.historia h2 {
+	.historia div article h2 {
 		padding: 20px 10px;
 	}
 
