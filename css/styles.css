@@ -198,7 +198,7 @@ section {
 .integrantes ul {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 50px;
+	margin-top: 70px;
 	justify-content: space-around;
 	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
@@ -279,7 +279,7 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-top: 50px;
+	margin-top: 70px;
 	background: #fff;
 	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
@@ -444,12 +444,11 @@ a:hover > .albums-img {
 /* Historia */
 
 
-.historia article {
+.historia div {
 	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
-	margin-top: 50px;
-	border-radius: 10px;
+	margin-top: 70px;
 }
 
 .historia h2 {
@@ -466,11 +465,8 @@ a:hover > .albums-img {
 	padding: 0px 20px;
 }
 
-.verMas {
-	padding: 50px 0 50px 20px;
-}
 
-.verMas a{
+.verMas{
 	font-size: 1.2rem;
 	border-radius: 2px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
@@ -478,9 +474,11 @@ a:hover > .albums-img {
 	color: #ecf0f1;
 	padding: 20px 60px;
 	text-transform: uppercase;
+	display: inline-block;
+	margin: 40px 20px;
 }
 
-.verMas a:hover {
+.verMas:hover {
 	-webkit-box-shadow: 0px 4px 10px 1px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 4px 10px 1px rgba(0,0,0,1);
 	box-shadow: 0px 4px 10px 1px rgba(0,0,0,1);
@@ -491,7 +489,7 @@ a:hover > .albums-img {
 
 
 .noticias {
-	margin-top: 50px;
+	margin-top: 70px;
 	-webkit-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
@@ -543,14 +541,14 @@ a:hover > .albums-img {
 	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	flex-direction: column;
 	background: #e9e9e9;
-	margin-top: 50px;
+	margin: 70px 0px;
 	padding-bottom: 20px;
 	border-radius: 10px;
 }
 
 .contacto div {
 	position: relative;
-	max-width: 50%;
+	width: 600px;
 	margin: auto;
 	padding: 20px
 }
@@ -804,19 +802,19 @@ footer {
 	}
 
 	.contacto input {
-		width: 95%;
+		width: 80%;
 		margin: auto;
 	}
 
 	.contacto textarea {
-		width: 95%;
+		width: 80%;
 		color: #555;
 	}
 
 	.contacto form h3 {
-		font-size: 1.2rem;
+		font-size: 1rem;
 		text-align: center;
-		font-weight: 400;
+		font-weight: 300;
 		padding: 20px;
 		color: #4b4b4b;
 	}
@@ -981,7 +979,8 @@ footer {
 	/* Historia */
 
 	.historia article {
-		margin-top: 100px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.historia h2 {
@@ -993,17 +992,15 @@ footer {
 	}
 
 	.verMas {
-		display: flex;
-		padding: 30px 0 30px 20px;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-
-	.verMas a{
 		font-size: 1rem;
 		padding: 15px 30px;
 		text-transform: uppercase;
+		width: 130px;
+		align-self: center;
+		text-align: center;
 	}
+
+
 
   
 
@@ -1026,7 +1023,7 @@ footer {
 	/* Contacto */
 
 	.contacto {
-		margin-top: 100px;
+	margin-top: 100px;
 	}
 
 	.contacto div {
@@ -1062,11 +1059,12 @@ footer {
 	}
 
 	.contacto form h3 {
-		font-size: 1.2rem;
+		font-size: 1rem;
 		text-align: center;
-		font-weight: 400;
+		font-weight: 300;
 		padding: 20px;
 		color: #4b4b4b;
+		left: 0;
 	}
 
 	
