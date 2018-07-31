@@ -9,14 +9,14 @@
     margin-left: 300%;
     display: flex;
     justify-content: center;
-    width: 625px;
+    width: 618px;
   }
 
   100% {
     margin-left: 0%;
     display: flex;
     justify-content: center;
-    width: 625px;
+    width: 618px;
   }
 }
 
@@ -147,7 +147,7 @@ section {
 	display: block;
 	position: relative;	
 	background-color: #C62828;
-	font-size: 2.5rem;
+	font-size: 2.4rem;
 	color: #fff;	
 	align-self: center;
 	padding: 25px;
@@ -449,6 +449,7 @@ a:hover > .albums-img {
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	margin-top: 70px;
+	border-radius: 10px;
 }
 
 .historia h2 {
@@ -540,7 +541,7 @@ a:hover > .albums-img {
 	-moz-box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	box-shadow: -1px 12px 18px 1px rgba(0,0,0,0.58);
 	flex-direction: column;
-	background: #e9e9e9;
+	background: #e9e9e9;	
 	margin: 70px 0px;
 	padding-bottom: 20px;
 	border-radius: 10px;
@@ -594,6 +595,7 @@ a:hover > .albums-img {
 	border: none;
 	color: #555;
 	border-bottom: 2px solid #d1d1d1;
+	font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 .contacto input:focus {
@@ -622,14 +624,15 @@ a:hover > .albums-img {
 
 .contacto textarea {
 	width: 80%;
-	height: 120px;
-	outline: none;
+	height: 200px;
+	/*! outline: none; */
 	resize: none;
 	margin-bottom: 1em;
 	border: 1px solid #CECCCC;
 	padding: .8em 4em .8em 1em;
 	font-size: 1em;
 	color: #555;
+	font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 .contacto textarea:focus {
@@ -978,9 +981,13 @@ footer {
 
 	/* Historia */
 
+
 	.historia article {
 		display: flex;
 		flex-direction: column;
+	}
+	.historia div {
+		margin-top: 100px;
 	}
 
 	.historia h2 {
@@ -1107,14 +1114,14 @@ footer {
 	    margin-left: 300%;
 	    display: flex;
 	    justify-content: center;
-	    width: 350px;
+	    width: 287px;
 	  }
 
 	  100% {
 	    margin-left: 0%;
 	    display: flex;
 	    justify-content: center;
-	    width: 350px;
+	    width: 287px;
 	  }
 	}
 
@@ -1149,7 +1156,7 @@ footer {
   
   	
 	.titulo {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		font-weight: bold;
 	}
 
@@ -1168,7 +1175,7 @@ footer {
 	/*Dentro de Integrantes y Discografia*/
 
 	.barra_titulo {
-		font-size: 1rem;
+		font-size: 0.9rem;
 		text-align: center;
 	}
 
