@@ -962,12 +962,7 @@ footer {
 		margin-top: 60px;
 	}
 	
-	/* Discografia */
-
-	.discografia ul {
-		margin-top: 100px;
-	}
-
+	
 	/* Cierre discografia */
 	.albums_oculto,
 	.albums_oculto_2,
@@ -999,9 +994,7 @@ footer {
 		display: flex;
 		flex-direction: column;
 	}
-	.historia div {
-		margin-top: 100px;
-	}
+
 
 	.historia div article h2 {
 		padding: 20px 10px;
@@ -1026,9 +1019,6 @@ footer {
 
 	/* Noticias */
 
-	.noticias {
-		margin-top: 100px;
-	}
 
 	.noticias ul {
 		flex-direction: column;

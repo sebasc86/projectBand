@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+	
 
 	$('.cierre_discografia_2').on('click', function(e){
 			if ($('.albums_vivo_oculto').is(':hidden')) {
