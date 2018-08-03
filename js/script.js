@@ -1,6 +1,33 @@
 $( document ).ready(function() {
 
 	
+	$(".carousel_img img").each( function( index, el ) {
+	    $(el).addClass( "imagen" +"_"+index );
+	});
+
+
+	let $imgCarr= $( "#img_first" );	
+	$('.arrow_container_right').on('click', function(e){
+		$imgCarr.css("display", "none");
+		$imgCarr  = $imgCarr.next();
+		if($imgCarr.is(':hidden')) {
+			$imgCarr.show()
+		} else {
+			$imgCarr = $("#img_first");
+			$imgCarr.show();
+		}
+	});
+
+	$('.arrow_container_left').on('click', function(e){
+		$imgCarr.css("display", "none");
+		$imgCarr  = $imgCarr.prev();
+		if($imgCarr.is(':hidden')) {
+			$imgCarr.show()
+		}else {
+			$imgCarr = $("#img_last");
+			$imgCarr.show();
+		}
+	});
 
 	$('.cierre_discografia_2').on('click', function(e){
 			if ($('.albums_vivo_oculto').is(':hidden')) {
