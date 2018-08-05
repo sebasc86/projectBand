@@ -344,7 +344,7 @@ section {
 }
 
 .albums h2{
-	color: #fff;
+	color: black;
 	position: absolute;
 	align-self: center;
 	font-size: 1.1rem;
@@ -352,12 +352,12 @@ section {
 	bottom: 15%;
 	width: 100%;
 	padding: 10px;
-	background: #ffffff80;
+	background: #fffc;
 	text-align: center;
 }
 
 .albums p {
-	color: #fff;
+	color: black;
 	position: absolute;
 	align-self: center;
 	font-size: 1.1rem;
@@ -365,7 +365,7 @@ section {
 	bottom: 5px;
 	width: 100%;
 	padding: 5px;
-	background: #ffffff80;
+	background: #fffc;
 	text-align: center;
 }
 
@@ -383,34 +383,34 @@ section {
 }
 
 .albums .album-titulo {
-	color: #c51414;
+	color: black;
 	position: absolute;
-	top: 65%;
+	bottom: 27%;
 	align-self: center;
 	font-size: 1.1rem;
-	display: none;
+	display: block;
 }
 
 .albums .album-titulo-2 {
-	color: #c51414;
+	color: black;
 	position: absolute;
 	top: 73%;
 	align-self: center;
 	font-size: 1.1rem;
-	display: none;
+	display: block;
 }
 
 .albums .album-titulo-small {
-	font-size: 0.7rem;
-	display: none;
+	font-size: 1.1rem;
+	display: block;
 }
 
-.albums:hover > h2,
+/*.albums:hover > h2,
 .albums:hover > p,
 .albums:hover > .icon-disco,
 .albums:hover > .icon-ytb {
 	display: block;
-}
+}*/
 
 .albums img {
 	width: 250px;
@@ -480,7 +480,31 @@ section {
 	clear: both;
 }
 
-.modal .fa-times {
+.modal span {
+	display: inline-block;
+	width: 70%;
+	position: relative;
+	bottom: 15px;
+	padding-left: 20px;
+}
+
+.fondo_modal .modal img {
+	display: inline-block;
+	width: 75px;
+	height: 50px;
+}
+
+.fondo_modal .modal .icon-disco-rs {
+	width: 60px;
+	height: 60px;
+}
+
+.fondo_modal .modal .icon-ytb {
+	display: block;
+}
+
+
+.fondo_modal .modal .fa-times {
 	position: absolute;
 	right: 20px;
 	top: 20px;
@@ -1081,6 +1105,17 @@ footer {
 	.integrantes ul {
 		margin-top: 60px;
 	}
+
+	/*Modal*/
+
+	.modal {
+		width: 95%;
+	}
+
+	.fondo_modal .modal img {
+		width: 70px;
+		height: 50px;
+	}
 	
 	
 	/* Cierre discografia */
@@ -1338,6 +1373,10 @@ footer {
 	}
 
 	/*Discografia*/
+
+	.albums h2 {
+		bottom: 12.5%;
+	}
 
   	.albums img {
 		width: 300px;

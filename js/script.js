@@ -18,19 +18,6 @@ $( document ).ready(function() {
 			
 	});
 
-				// $('.modal .fa-times').click(function(e) {
-				// 	setTimeout( function() {
-				// 		document.getElementById("prueba").removeAttribute("id");
-				// 	}, 10)
-			// $('#'+$albumId).find('div.fondo_modal').hide();
-			
-		// 	e.preventDefault()
-		// });
-
-
-
-
-	
 
 	
 	
@@ -69,7 +56,7 @@ $( document ).ready(function() {
 				$('.albums_vivo_oculto').slideDown();
 				if ((screen.width > 768)) {
 					$('html,body').animate({
-						 	scrollTop: $("#albums_vivo_visible").offset().top
+						 	scrollTop: $("#album_26").offset().top
 					 });
 				}
 				e.preventDefault();
