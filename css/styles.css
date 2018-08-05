@@ -344,28 +344,42 @@ section {
 }
 
 .albums h2{
-	color: #c51414;
+	color: #fff;
 	position: absolute;
-	top: 70%;
 	align-self: center;
 	font-size: 1.1rem;
-	display: none;
+	display: block;
+	bottom: 15%;
+	width: 100%;
+	padding: 10px;
+	background: #ffffff80;
+	text-align: center;
 }
 
-.albums a {
+.albums p {
+	color: #fff;
+	position: absolute;
+	align-self: center;
+	font-size: 1.1rem;
+	display: block;
+	bottom: 5px;
+	width: 100%;
+	padding: 5px;
+	background: #ffffff80;
+	text-align: center;
+}
+
+
+.albums  {
 	display: flex;
 	justify-content: center;
 }
 
-.albums p{
-	color: black;
-	position: absolute;
-	padding: 5px;
-	top: 80%;
-	align-self: center;
-	font-size: 1.2rem;
-	font-weight: 500;
-	display: none;
+.fondo_modal h2,
+.fondo_modal p{
+	position: relative;
+	display: inline-block;
+	color: 	black;
 }
 
 .albums .album-titulo {
@@ -391,10 +405,10 @@ section {
 	display: none;
 }
 
-.albums a:hover > h2,
-.albums a:hover > p,
-.albums a:hover > .icon-disco,
-.albums a:hover > .icon-ytb {
+.albums:hover > h2,
+.albums:hover > p,
+.albums:hover > .icon-disco,
+.albums:hover > .icon-ytb {
 	display: block;
 }
 
@@ -403,7 +417,7 @@ section {
 	height: 250px;
 }
 
-.albums .icon-ytb {
+/*.albums .icon-ytb {
 	position: absolute;
 	top: 5%;
 	right: 10px;
@@ -435,10 +449,41 @@ section {
 	width: 120px;
 	height: 70px;
 }
+*/
 
-a:hover > .albums-img {
+/*.albums:hover > .albums-img {
 	opacity: 0.05;
   	transition: 0.5s;
+}*/
+
+/* Modal */
+
+.fondo_modal {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0px;
+	z-index: 999
+}
+
+.modal {
+	background: #fff;
+	padding: 20px;
+	width: 50%;
+	border-radius: 10px;
+	position: relative;
+	clear: both;
+}
+
+.modal .fa-times {
+	position: absolute;
+	right: 20px;
+	top: 20px;
 }
 
 /*Fotos*/
@@ -514,7 +559,6 @@ a:hover > .albums-img {
 
 .carousel_img .imagen_0 {
 	display: block;
-	left: 0;
 	position: inherit;
 } 
 
@@ -1092,7 +1136,7 @@ footer {
 	}
 
 	 .carousel_img {
-	 	width: 80%;
+	 	width: 100%;
 	 	margin: 30px;
 	 	display: flex;
 	 	justify-content: center;
@@ -1303,11 +1347,16 @@ footer {
 	/* Fotos */
 
 	.fotos {
-		width: 98%;
+		width: 100%;
 	}
 
 	.carousel {
-		height: 500px;
+		height: 550px;
+		width: 100%;
+	}
+
+	.carousel_img img {
+	    width: 100%;
 	}
 
 	/*Titulos de las otras seccions*/

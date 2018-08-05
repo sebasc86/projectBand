@@ -1,5 +1,39 @@
 $( document ).ready(function() {
 
+	$(".albums").each( function( index, e ) {
+	    $(e).attr( "id","album_"+index );
+	});
+
+	$('.albums').on('click', function(e){
+		let $albumId = $(this).attr('id');
+		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
+		e.preventDefault()
+
+			$('.modal').click(function(e) {
+					setTimeout( function() {
+							$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
+					}, 10)
+
+			})
+			
+	});
+
+				// $('.modal .fa-times').click(function(e) {
+				// 	setTimeout( function() {
+				// 		document.getElementById("prueba").removeAttribute("id");
+				// 	}, 10)
+			// $('#'+$albumId).find('div.fondo_modal').hide();
+			
+		// 	e.preventDefault()
+		// });
+
+
+
+
+	
+
+	
+	
 	
 	$(".carousel_img img").each( function( index, el ) {
 	    $(el).addClass( "imagen" +"_"+index );
@@ -84,7 +118,7 @@ $( document ).ready(function() {
 				$('.albums_oculto').slideDown();
 				if ((screen.width > 768)) {
 					$('html,body').animate({
-						 	scrollTop: $("#album_visible").offset().top
+						 	scrollTop: $("#album_0").offset().top
 					 	});
 				}
 				ev.preventDefault();
