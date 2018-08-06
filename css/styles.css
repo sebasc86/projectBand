@@ -377,13 +377,7 @@ section {
 }
 
 
-.fondo_modal .modal h2,
-.fondo_modal .modal p{
-	position: relative;
-	display: inline-block;
-	color: 	black;
-	margin-bottom: 20px;
-}
+
 
 .albums .album-titulo {
 	color: black;
@@ -452,6 +446,14 @@ section {
 .modal .escucha {
 	width: 100%;
 	text-align: center;
+}
+
+.fondo_modal .modal h2,
+.fondo_modal .modal p{
+	position: relative;
+	display: inline-block;
+	color: 	black;
+	margin-bottom: 20px;
 }
 
 .fondo_modal .modal img {
@@ -902,7 +904,10 @@ footer {
 		padding: 10px;
 	}
 
-	/* Modal */
+	/* albums */ 
+	.albums{
+		cursor: pointer;
+	}
 
 	/*Modal*/
 
@@ -1167,6 +1172,10 @@ footer {
 
 	
 	/* Cierre discografia */
+
+	.albums {
+		cursor: none;
+	}
 
 	.albums h2 {
 		bottom: 14%;
