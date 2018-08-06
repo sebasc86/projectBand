@@ -1025,7 +1025,6 @@ footer {
         min-width: 100%;
         display: none;
         top: 100%;
-        left: 0;
 	}
 
 	header a {
@@ -1090,6 +1089,11 @@ footer {
 		height: 50px;
 	}
 	
+
+	.albums {
+		cursor: none;
+	}
+
 	
 	/* Cierre discografia */
 	.albums_oculto,

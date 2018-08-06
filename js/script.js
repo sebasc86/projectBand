@@ -12,20 +12,21 @@ $( document ).ready(function() {
 			$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
 
 			$('.fa-times').click(function(e) {
-					setTimeout( function() {
+					setTimeout( function(e) {
 							$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
 					}, 10)
-
+					e.preventDefault()
 			})
 
 			
 			
 	});
 
-	$('.youtube_modal').click(function() {
+	$('.youtube_modal').click(function(e) {
 			      url = $(this).attr("href");
 			      window.open(url, '_blank');
 			      return false;
+			      e.preventDefault()
 			});
 	
 	
@@ -150,7 +151,7 @@ $( document ).ready(function() {
 				$('.albums_oculto').slideUp();
 			} else {
 					$('html,body').animate({
-							scrollTop: $(".discografia").offset().top
+							scrollTop: $("#discografia").offset().top
 						}, -7000);
 					$('.albums_oculto_4').slideUp();
 					$('.albums_oculto_3').slideUp();
@@ -160,12 +161,13 @@ $( document ).ready(function() {
 	});
 
 
-	$(".botton_ham").on("click", function(event){
+	$(".botton_ham").click(function(event){
 			$(".nav").slideDown();
 	    	event.stopImmediatePropagation();			    
 	});
 
-	$('*:not(.botton_ham)').on('click', function(e){
+
+	$('*:not(.botton_ham)').click(function(e){
 		if ($('.nav').is(':visible') && (screen.width <= 768)) {
 				$('.nav').slideUp();
 				e.stopImmediatePropagation();
