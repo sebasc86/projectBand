@@ -341,6 +341,7 @@ section {
 .albums {
 	position: relative;
 	padding: 5px;
+	cursor: pointer;
 }
 
 .albums h2{
@@ -380,6 +381,7 @@ section {
 	position: relative;
 	display: inline-block;
 	color: 	black;
+	margin-bottom: 20px;
 }
 
 .albums .album-titulo {
@@ -405,56 +407,11 @@ section {
 	display: block;
 }
 
-/*.albums:hover > h2,
-.albums:hover > p,
-.albums:hover > .icon-disco,
-.albums:hover > .icon-ytb {
-	display: block;
-}*/
-
 .albums img {
 	width: 250px;
 	height: 250px;
 }
 
-/*.albums .icon-ytb {
-	position: absolute;
-	top: 5%;
-	right: 10px;
-	width: 40px;
-	height: 40px;
-	align-self: center;
-	display: none;
-}
-
-.albums .icon-disco {
-	position: absolute;
-	top: 40%;
-	width: 100px;
-	height: 50px;
-	align-self: center;
-	display: none;
-}
-
-.albums .icon-disco-doble {
-	top: 20%;
-}
-
-.albums .icon-disco-rs {
-	width: 60px;
-	height: 60px;
-}
-
-.albums .icon-disco-vr {
-	width: 120px;
-	height: 70px;
-}
-*/
-
-/*.albums:hover > .albums-img {
-	opacity: 0.05;
-  	transition: 0.5s;
-}*/
 
 /* Modal */
 
@@ -478,6 +435,8 @@ section {
 	border-radius: 10px;
 	position: relative;
 	clear: both;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .modal span {
@@ -485,13 +444,19 @@ section {
 	width: 70%;
 	position: relative;
 	bottom: 15px;
-	padding-left: 20px;
+	align-self: center;
+	text-align: center;
+}
+
+.modal .escucha {
+	width: 100%;
+	text-align: center;
 }
 
 .fondo_modal .modal img {
-	display: inline-block;
 	width: 75px;
 	height: 50px;
+	margin: 0 10px 10px 10px;
 }
 
 .fondo_modal .modal .icon-disco-rs {
@@ -499,8 +464,13 @@ section {
 	height: 60px;
 }
 
-.fondo_modal .modal .icon-ytb {
-	display: block;
+.fondo_modal .modal a {
+	margin: auto;
+}
+
+.fondo_modal .modal a .icon-ytb {
+	width: 150px;
+	margin: auto;
 }
 
 
@@ -508,6 +478,7 @@ section {
 	position: absolute;
 	right: 20px;
 	top: 20px;
+	z-index: 2;
 }
 
 /*Fotos*/
@@ -857,6 +828,7 @@ footer {
 
 .footer_mail:before {
 	content: url(../img/png/contacto.png);
+	display: inline-block;
 	position: relative;
 	right: 10px;
 	top: 5px;
@@ -873,6 +845,7 @@ footer {
 .footer_tel:before {
 	content: url(../img/png/telefono.png);
 	position: relative;
+	display: inline-block;
 	right: 10px;
 	top: 7px;
 }
@@ -1204,7 +1177,9 @@ footer {
 		text-align: center;
 	}
 
-
+	.mobile_none {
+		display: none;
+	}
 
   
 
@@ -1376,6 +1351,10 @@ footer {
 
 	.albums h2 {
 		bottom: 12.5%;
+		width: 98%;
+	}
+	.albums p {
+		width: 300px;
 	}
 
   	.albums img {

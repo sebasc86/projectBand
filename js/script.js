@@ -9,16 +9,24 @@ $( document ).ready(function() {
 		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
 		e.preventDefault()
 
-			$('.modal').click(function(e) {
-					setTimeout( function() {
-							$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
-					}, 10)
+		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
 
-			})
+		$('.fa-times').click(function(e) {
+				setTimeout( function() {
+						$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
+				}, 10)
+
+		})
+
+			
 			
 	});
 
-
+	$('.youtube_modal').click(function() {
+			      url = $(this).attr("href");
+			      window.open(url);
+			      return false;
+	});
 	
 	
 	
