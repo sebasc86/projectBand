@@ -341,60 +341,69 @@ section {
 .albums {
 	position: relative;
 	padding: 5px;
+	cursor: pointer;
 }
 
 .albums h2{
-	color: #c51414;
+	color: black;
 	position: absolute;
-	top: 70%;
 	align-self: center;
 	font-size: 1.1rem;
-	display: none;
+	display: block;
+	bottom: 15%;
+	width: 100%;
+	padding: 10px;
+	background: #fffc;
+	text-align: center;
 }
 
-.albums a {
+.albums p {
+	color: black;
+	position: absolute;
+	align-self: center;
+	font-size: 1.1rem;
+	display: block;
+	bottom: 5px;
+	width: 100%;
+	padding: 5px;
+	background: #fffc;
+	text-align: center;
+}
+
+
+.albums  {
 	display: flex;
 	justify-content: center;
 }
 
-.albums p{
-	color: black;
-	position: absolute;
-	padding: 5px;
-	top: 80%;
-	align-self: center;
-	font-size: 1.2rem;
-	font-weight: 500;
-	display: none;
+.fondo_modal h2,
+.fondo_modal p{
+	position: relative;
+	display: inline-block;
+	color: 	black;
+	margin-bottom: 20px;
 }
 
 .albums .album-titulo {
-	color: #c51414;
+	color: black;
 	position: absolute;
-	top: 65%;
+	bottom: 27%;
 	align-self: center;
 	font-size: 1.1rem;
-	display: none;
+	display: block;
 }
 
 .albums .album-titulo-2 {
-	color: #c51414;
+	color: black;
 	position: absolute;
 	top: 73%;
 	align-self: center;
 	font-size: 1.1rem;
-	display: none;
+	display: block;
 }
 
 .albums .album-titulo-small {
-	font-size: 0.7rem;
-	display: none;
-}
-
-.albums a:hover > h2,
-.albums a:hover > p,
-.albums a:hover > .icon-disco,
-.albums a:hover > .icon-ytb {
+	font-size: 1.1rem;
 	display: block;
 }
 
@@ -403,42 +412,73 @@ section {
 	height: 250px;
 }
 
-.albums .icon-ytb {
-	position: absolute;
-	top: 5%;
-	right: 10px;
-	width: 40px;
-	height: 40px;
-	align-self: center;
+
+/* Modal */
+
+.fondo_modal {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.7);
 	display: none;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0px;
+	z-index: 999
 }
 
-.albums .icon-disco {
-	position: absolute;
-	top: 40%;
-	width: 100px;
+.modal {
+	background: #fff;
+	padding: 20px;
+	width: 50%;
+	border-radius: 10px;
+	position: relative;
+	clear: both;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.modal span {
+	display: inline-block;
+	width: 70%;
+	position: relative;
+	bottom: 15px;
+	align-self: center;
+	text-align: center;
+}
+
+.modal .escucha {
+	width: 100%;
+	text-align: center;
+}
+
+.fondo_modal .modal img {
+	width: 75px;
 	height: 50px;
-	align-self: center;
-	display: none;
+	margin: 0 10px 10px 10px;
 }
 
-.albums .icon-disco-doble {
-	top: 20%;
-}
-
-.albums .icon-disco-rs {
+.fondo_modal .modal .icon-disco-rs {
 	width: 60px;
 	height: 60px;
 }
 
-.albums .icon-disco-vr {
-	width: 120px;
-	height: 70px;
+.fondo_modal .modal a {
+	margin: auto;
 }
 
-a:hover > .albums-img {
-	opacity: 0.05;
-  	transition: 0.5s;
+.fondo_modal .modal a .icon-ytb {
+	width: 150px;
+	margin: auto;
+}
+
+
+.fondo_modal .modal .fa-times {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 2;
 }
 
 /*Fotos*/
@@ -514,7 +554,6 @@ a:hover > .albums-img {
 
 .carousel_img .imagen_0 {
 	display: block;
-	left: 0;
 	position: inherit;
 } 
 
@@ -789,6 +828,7 @@ footer {
 
 .footer_mail:before {
 	content: url(../img/png/contacto.png);
+	display: inline-block;
 	position: relative;
 	right: 10px;
 	top: 5px;
@@ -805,6 +845,7 @@ footer {
 .footer_tel:before {
 	content: url(../img/png/telefono.png);
 	position: relative;
+	display: inline-block;
 	right: 10px;
 	top: 7px;
 }
@@ -984,7 +1025,6 @@ footer {
         min-width: 100%;
         display: none;
         top: 100%;
-        left: 0;
 	}
 
 	header a {
@@ -1037,7 +1077,23 @@ footer {
 	.integrantes ul {
 		margin-top: 60px;
 	}
+
+	/*Modal*/
+
+	.modal {
+		width: 95%;
+	}
+
+	.fondo_modal .modal img {
+		width: 70px;
+		height: 50px;
+	}
 	
+
+	.albums {
+		cursor: none;
+	}
+
 	
 	/* Cierre discografia */
 	.albums_oculto,
@@ -1092,7 +1148,7 @@ footer {
 	}
 
 	 .carousel_img {
-	 	width: 80%;
+	 	width: 100%;
 	 	margin: 30px;
 	 	display: flex;
 	 	justify-content: center;
@@ -1125,7 +1181,9 @@ footer {
 		text-align: center;
 	}
 
-
+	.mobile_none {
+		display: none;
+	}
 
   
 
@@ -1295,6 +1353,14 @@ footer {
 
 	/*Discografia*/
 
+	.albums h2 {
+		bottom: 12%;
+		width: 98%;
+	}
+	.albums p {
+		width: 300px;
+	}
+
   	.albums img {
 		width: 300px;
 		height: 300px;
@@ -1303,7 +1369,7 @@ footer {
 	/* Fotos */
 
 	.fotos {
-		width: 98%;
+		width: 100%;
 	}
 
 	.carousel_img {
@@ -1315,7 +1381,12 @@ footer {
 	}
 
 	.carousel {
-		height: 500px;
+		height: 550px;
+		width: 100%;
+	}
+
+	.carousel_img img {
+	    width: 100%;
 	}
 
 	/*Titulos de las otras seccions*/

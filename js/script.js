@@ -1,5 +1,35 @@
 $( document ).ready(function() {
 
+	$(".albums").each( function( index, e ) {
+	    $(e).attr( "id","album_"+index );
+	});
+
+	$('.albums').on('click', function(e){
+		let $albumId = $(this).attr('id');
+		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
+		e.preventDefault()
+
+			$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
+
+			$('.fa-times').click(function(e) {
+					setTimeout( function(e) {
+							$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
+					}, 10)
+					e.preventDefault()
+			})
+
+			
+			
+	});
+
+	$('.youtube_modal').click(function(e) {
+			      url = $(this).attr("href");
+			      window.open(url, '_blank');
+			      return false;
+			      e.preventDefault()
+			});
+	
+	
 	
 	$(".carousel_img img").each( function( index, el ) {
 	    $(el).addClass( "imagen" +"_"+index );
@@ -35,7 +65,7 @@ $( document ).ready(function() {
 				$('.albums_vivo_oculto').slideDown();
 				if ((screen.width > 768)) {
 					$('html,body').animate({
-						 	scrollTop: $("#albums_vivo_visible").offset().top
+						 	scrollTop: $("#album_26").offset().top
 					 });
 				}
 				e.preventDefault();
@@ -84,7 +114,7 @@ $( document ).ready(function() {
 				$('.albums_oculto').slideDown();
 				if ((screen.width > 768)) {
 					$('html,body').animate({
-						 	scrollTop: $("#album_visible").offset().top
+						 	scrollTop: $("#album_0").offset().top
 					 	});
 				}
 				ev.preventDefault();
@@ -121,7 +151,7 @@ $( document ).ready(function() {
 				$('.albums_oculto').slideUp();
 			} else {
 					$('html,body').animate({
-							scrollTop: $(".discografia").offset().top
+							scrollTop: $("#discografia").offset().top
 						}, -7000);
 					$('.albums_oculto_4').slideUp();
 					$('.albums_oculto_3').slideUp();
@@ -131,12 +161,16 @@ $( document ).ready(function() {
 	});
 
 
-	$(".botton_ham").on("click", function(event){
+
+
+
+	$(".botton_ham").click(function(event){
 			$(".nav").slideDown();
-	    	event.stopImmediatePropagation();			    
+	    	event.stopImmediatePropagation();		    
 	});
 
-	$('*:not(.botton_ham)').on('click', function(e){
+
+	$('*:not(.botton_ham)').click(function(e){
 		if ($('.nav').is(':visible') && (screen.width <= 768)) {
 				$('.nav').slideUp();
 				e.stopImmediatePropagation();
