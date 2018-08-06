@@ -6,10 +6,12 @@ $( document ).ready(function() {
 
 	$('.albums').on('click', function(e){
 		let $albumId = $(this).attr('id');
-		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');		
+		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
+		$('.albums').css('pointer-events' , 'none');
 		$('.fa-times').click(function(e) {
 				setTimeout( function(e) {
 						$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
+						$('.albums').css('pointer-events' , 'auto');
 						
 				}, 10)
 				e.preventDefault();		
