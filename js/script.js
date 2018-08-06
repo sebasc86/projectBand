@@ -6,20 +6,15 @@ $( document ).ready(function() {
 
 	$('.albums').on('click', function(e){
 		let $albumId = $(this).attr('id');
-		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
-		e.preventDefault()
-
-			$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
-
-			$('.fa-times').click(function(e) {
-					setTimeout( function(e) {
-							$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
-					}, 10)
-					e.preventDefault()
-			})
-
-			
-			
+		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');		
+		$('.fa-times').click(function(e) {
+				setTimeout( function(e) {
+						$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
+						
+				}, 10)
+				e.preventDefault();		
+		})	
+		e.preventDefault();	
 	});
 
 	$('.youtube_modal').click(function(e) {

@@ -377,8 +377,8 @@ section {
 }
 
 
-.fondo_modal h2,
-.fondo_modal p{
+.fondo_modal .modal h2,
+.fondo_modal .modal p{
 	position: relative;
 	display: inline-block;
 	color: 	black;
@@ -426,7 +426,8 @@ section {
 	align-items: center;
 	top: 0;
 	left: 0px;
-	z-index: 999
+	z-index: 999;
+	cursor: auto;
 }
 
 .modal {
@@ -442,9 +443,8 @@ section {
 
 .modal span {
 	display: inline-block;
-	width: 70%;
+	width: 60%;
 	position: relative;
-	bottom: 15px;
 	align-self: center;
 	text-align: center;
 }
@@ -477,8 +477,8 @@ section {
 
 .fondo_modal .modal .fa-times {
 	position: absolute;
-	right: 20px;
-	top: 20px;
+	right: 15px;
+	top: 10px;
 	z-index: 2;
 }
 
@@ -902,6 +902,41 @@ footer {
 		padding: 10px;
 	}
 
+	/* Modal */
+
+	/*Modal*/
+
+	.modal {
+		width: 90%;
+		padding: 10px 0;
+	}
+
+	.modal span {
+		bottom: 0;
+		width: 50%;
+		padding: 10px;
+	}
+
+	.modal .escucha {
+		bottom: 0;
+		width: 50%;
+		padding: 10px;
+	}
+
+	.fondo_modal .modal img {
+		width: 70px;
+		height: 50px;
+		margin: auto;
+		padding: 10px;
+	}
+
+	.fondo_modal .modal h2,
+	.fondo_modal .modal p{
+		margin: 0;
+		width: 100%;
+		padding: 10px 30px;
+	}
+
 
 	/* Noticias */
 
@@ -1099,11 +1134,18 @@ footer {
 
 	.modal {
 		width: 95%;
+		padding: 10px 0;
 	}
 
 	.modal span {
 		bottom: 0;
-		width: 100%;
+		width: 50%;
+		padding: 10px;
+	}
+
+	.modal .escucha {
+		bottom: 0;
+		width: 50%;
 		padding: 10px;
 	}
 
@@ -1111,15 +1153,16 @@ footer {
 		width: 70px;
 		height: 50px;
 		margin: auto;
+		padding: 10px;
 	}
 
-	.fondo_modal h2, 
-	.fondo_modal p {
+	.fondo_modal .modal h2,
+	.fondo_modal .modal p{
 		margin: 0;
+		width: 100%;
+		padding: 10px 20px;
 	}
 
-
-	
 
 
 	
@@ -1384,7 +1427,20 @@ footer {
 		text-align: center;
 	}
 
+	/* modal */
+
+	.modal {
+		padding: 20px;
+	}
+
+	.fondo_modal .modal h2, .fondo_modal .modal p {
+	    margin: 0;
+	    width: 100%;
+	    padding: 0 0 20px 0;
+	}
+
 	/*Discografia*/
+
 
 	.albums h2 {
 		bottom: 12%;
