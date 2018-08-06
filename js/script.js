@@ -161,9 +161,12 @@ $( document ).ready(function() {
 	});
 
 
+
+
+
 	$(".botton_ham").click(function(event){
 			$(".nav").slideDown();
-	    	event.stopImmediatePropagation();			    
+	    	event.stopImmediatePropagation();		    
 	});
 
 
