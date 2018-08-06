@@ -165,14 +165,16 @@ $( document ).ready(function() {
 
 
 	$(".botton_ham").click(function(event){
-			$(".nav").slideDown();
+			$(".nav").slideToggle();
 	    	event.stopImmediatePropagation();		    
 	});
 
 
-	$('*:not(.botton_ham)').click(function(e){
+
+
+	$(document).click(function(e){
 		if ($('.nav').is(':visible') && (screen.width <= 768)) {
-				$('.nav').slideUp();
+				$('.nav').slideToggle();
 				e.stopImmediatePropagation();
 		}
 	});
