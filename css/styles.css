@@ -1177,7 +1177,7 @@ footer {
 	/* Cierre discografia */
 
 	.albums {
-		cursor: none;
+		cursor: pointer;
 	}
 
 	.albums h2 {
