@@ -168,7 +168,7 @@ $( document ).ready(function() {
 		if ($('.ham_img').css('top') == "0px") {
 			$(".nav").slideToggle();
 			$(".ham_img").css("top", "-100%")
-			$(".close_img").css("left", "10px")
+			$(".close_img").css("left", "5px")
 	    	event.stopImmediatePropagation();
 	    } else {
 	    	$(".nav").slideToggle();
