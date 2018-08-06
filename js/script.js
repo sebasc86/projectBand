@@ -154,6 +154,7 @@ $( document ).ready(function() {
 					$('.albums_oculto_3').slideUp();
 					$('.albums_oculto_2').slideUp();
 					$('.albums_oculto').slideUp();
+					$(".flecha").css("transform", "rotate(0deg)");
 			}
 	});
 

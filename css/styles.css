@@ -469,6 +469,8 @@ section {
 
 .fondo_modal .modal a {
 	margin: auto;
+	z-index: 10;
+	pointer-events: auto;
 }
 
 .fondo_modal .modal a .icon-ytb {
