@@ -165,8 +165,18 @@ $( document ).ready(function() {
 
 
 	$(".botton_ham").click(function(event){
+		if ($('.ham_img').css('top') == "0px") {
 			$(".nav").slideToggle();
-	    	event.stopImmediatePropagation();		    
+			$(".ham_img").css("top", "-100%")
+			$(".close_img").css("left", "10px")
+	    	event.stopImmediatePropagation();
+	    } else {
+	    	$(".nav").slideToggle();
+	    	$(".ham_img").css("display", "inline-block")
+			$(".ham_img").css("top", "0")
+			$(".close_img").css("left", "-150%")
+	    	event.stopImmediatePropagation();
+	    }
 	});
 
 
@@ -175,9 +185,11 @@ $( document ).ready(function() {
 	$(document).click(function(e){
 		if ($('.nav').is(':visible') && (screen.width <= 768)) {
 				$('.nav').slideToggle();
+				$(".ham_img").css("top", "0")
+				$(".close_img").css("left", "-150%");
 				e.stopImmediatePropagation();
 		}
 	});
 
-
+ 	
 });
