@@ -25,8 +25,8 @@ $( document ).ready(function() {
 	$('.youtube_modal').click(function(e) {
 			      url = $(this).attr("href");
 			      window.open(url, '_blank');
-			      return false;
 			      e.preventDefault()
+			      return false;
 			});
 	
 	
