@@ -9,14 +9,14 @@ $( document ).ready(function() {
 		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
 		e.preventDefault()
 
-		$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
+			$('#'+$albumId).find('div.fondo_modal').css('display', 'flex');
 
-		$('.fa-times').click(function(e) {
-				setTimeout( function() {
-						$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
-				}, 10)
+			$('.fa-times').click(function(e) {
+					setTimeout( function() {
+							$('#'+$albumId).find('div.fondo_modal').css('display', 'none');
+					}, 10)
 
-		})
+			})
 
 			
 			
@@ -24,9 +24,9 @@ $( document ).ready(function() {
 
 	$('.youtube_modal').click(function() {
 			      url = $(this).attr("href");
-			      window.open(url);
+			      window.open(url, '_blank');
 			      return false;
-	});
+			});
 	
 	
 	
