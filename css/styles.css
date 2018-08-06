@@ -472,8 +472,10 @@ section {
 }
 
 .fondo_modal .modal a .icon-ytb {
-	width: 150px;
+	width: 125px;
 	margin: auto;
+	padding: 10px;
+	height: 50px;
 }
 
 
