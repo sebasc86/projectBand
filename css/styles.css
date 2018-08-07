@@ -558,6 +558,7 @@ section {
 .carousel_img img{
  	display: none;
  	width: 80%;
+ 	height: 400px;
  }
 
 .carousel_img .imagen_0 {
