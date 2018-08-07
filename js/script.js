@@ -1,5 +1,15 @@
 $( document ).ready(function() {
 
+
+	$('nav a').click(function(e){				
+		e.preventDefault();		
+		let irAncla=$(this).attr('href');
+			$('body,html').stop(true,true).animate({				
+				scrollTop: $(irAncla).offset().top
+			},2000);
+		
+	});
+
 	$(".albums").each( function( index, e ) {
 	    $(e).attr( "id","album_"+index );
 	});
